@@ -10253,6 +10253,7 @@ a.btn-fill span {
   height: 60px;
   line-height: 60px;
   text-align: center;
+  letter-spacing: 2px;
 }
 .about .about-en {
   font-size: 14px;

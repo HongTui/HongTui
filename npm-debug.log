@@ -1,0 +1,985 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-connect-proxy',
+1 verbose cli   '--save-dev',
+1 verbose cli   '-d' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.4
+4 verbose install initial load of /Users/liuxuewen/github_project/HongTui/package.json
+5 warn package.json hongtui@1.0.0 No description
+6 warn package.json hongtui@1.0.0 No README data
+7 verbose installManyTop reading scoped package data from /Users/liuxuewen/github_project/HongTui/node_modules/grunt/package.json
+8 verbose installManyTop reading scoped package data from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-contrib-connect/package.json
+9 verbose installManyTop reading scoped package data from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-contrib-less/package.json
+10 verbose installManyTop reading scoped package data from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-contrib-watch/package.json
+11 verbose readDependencies loading dependencies from /Users/liuxuewen/github_project/HongTui/package.json
+12 silly cache add args [ 'grunt-connect-proxy', null ]
+13 verbose cache add spec grunt-connect-proxy
+14 silly cache add parsed spec Result {
+14 silly cache add   raw: 'grunt-connect-proxy',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'grunt-connect-proxy',
+14 silly cache add   rawSpec: '',
+14 silly cache add   spec: 'latest',
+14 silly cache add   type: 'tag' }
+15 silly addNamed grunt-connect-proxy@latest
+16 verbose addNamed "latest" is being treated as a dist-tag for grunt-connect-proxy
+17 info addNameTag [ 'grunt-connect-proxy', 'latest' ]
+18 silly mapToRegistry name grunt-connect-proxy
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry data Result {
+21 silly mapToRegistry   raw: 'grunt-connect-proxy',
+21 silly mapToRegistry   scope: null,
+21 silly mapToRegistry   name: 'grunt-connect-proxy',
+21 silly mapToRegistry   rawSpec: '',
+21 silly mapToRegistry   spec: 'latest',
+21 silly mapToRegistry   type: 'tag' }
+22 silly mapToRegistry uri https://registry.npmjs.org/grunt-connect-proxy
+23 verbose addNameTag registry:https://registry.npmjs.org/grunt-connect-proxy not in flight; fetching
+24 verbose request uri https://registry.npmjs.org/grunt-connect-proxy
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 17:48:27
+27 verbose request id 6165792a0d6b41ba
+28 verbose etag "7T50PU98TPZQ42R96XNXOH3P0"
+29 http request GET https://registry.npmjs.org/grunt-connect-proxy
+30 http 304 https://registry.npmjs.org/grunt-connect-proxy
+31 verbose headers { date: 'Sat, 21 May 2016 09:48:27 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   'cache-control': 'max-age=300',
+31 verbose headers   etag: '"7T50PU98TPZQ42R96XNXOH3P0"',
+31 verbose headers   age: '13',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-fra1232-FRA',
+31 verbose headers   'x-cache': 'HIT',
+31 verbose headers   'x-cache-hits': '2',
+31 verbose headers   'x-timer': 'S1463824107.686095,VS0,VE0',
+31 verbose headers   vary: 'Accept-Encoding' }
+32 silly get cb [ 304,
+32 silly get   { date: 'Sat, 21 May 2016 09:48:27 GMT',
+32 silly get     via: '1.1 varnish',
+32 silly get     'cache-control': 'max-age=300',
+32 silly get     etag: '"7T50PU98TPZQ42R96XNXOH3P0"',
+32 silly get     age: '13',
+32 silly get     connection: 'keep-alive',
+32 silly get     'x-served-by': 'cache-fra1232-FRA',
+32 silly get     'x-cache': 'HIT',
+32 silly get     'x-cache-hits': '2',
+32 silly get     'x-timer': 'S1463824107.686095,VS0,VE0',
+32 silly get     vary: 'Accept-Encoding' } ]
+33 verbose etag https://registry.npmjs.org/grunt-connect-proxy from cache
+34 verbose get saving grunt-connect-proxy to /Users/liuxuewen/.npm/registry.npmjs.org/grunt-connect-proxy/.cache.json
+35 verbose correctMkdir /Users/liuxuewen/.npm correctMkdir not in flight; initializing
+36 silly addNameTag next cb for grunt-connect-proxy with tag latest
+37 silly addNamed grunt-connect-proxy@0.2.0
+38 verbose addNamed "0.2.0" is a plain semver version for grunt-connect-proxy
+39 silly cache afterAdd grunt-connect-proxy@0.2.0
+40 verbose afterAdd /Users/liuxuewen/.npm/grunt-connect-proxy/0.2.0/package/package.json not in flight; writing
+41 verbose correctMkdir /Users/liuxuewen/.npm correctMkdir not in flight; initializing
+42 verbose afterAdd /Users/liuxuewen/.npm/grunt-connect-proxy/0.2.0/package/package.json written
+43 silly install resolved [ { name: 'grunt-connect-proxy',
+43 silly install resolved     description: 'Provides a http proxy as middleware for grunt connect.',
+43 silly install resolved     version: '0.2.0',
+43 silly install resolved     homepage: 'https://github.com/drewzboto/grunt-connect-proxy',
+43 silly install resolved     author: { name: 'Drewz', email: 'drewz@2mod5.com' },
+43 silly install resolved     repository:
+43 silly install resolved      { type: 'git',
+43 silly install resolved        url: 'git://github.com/drewzboto/grunt-connect-proxy.git' },
+43 silly install resolved     bugs: { url: 'https://github.com/drewzboto/grunt-connect-proxy/issues' },
+43 silly install resolved     licenses: [ [Object] ],
+43 silly install resolved     main: 'Gruntfile.js',
+43 silly install resolved     engines: { node: '>= 0.10.0' },
+43 silly install resolved     scripts: { test: 'grunt test' },
+43 silly install resolved     dependencies: { 'http-proxy': '~1.11.0', lodash: '~0.9.0' },
+43 silly install resolved     devDependencies:
+43 silly install resolved      { 'grunt-contrib-jshint': '~0.1.1',
+43 silly install resolved        'grunt-contrib-clean': '~0.4.0',
+43 silly install resolved        'grunt-contrib-nodeunit': '~0.1.2',
+43 silly install resolved        grunt: '~0.4.1',
+43 silly install resolved        'grunt-contrib-connect': '~0.5.0' },
+43 silly install resolved     peerDependencies: { grunt: '~0.4.1' },
+43 silly install resolved     keywords: [ 'gruntplugin', 'proxy', 'connect', 'http', 'grunt' ],
+43 silly install resolved     gitHead: 'fcd37bdb7f96717a4b03770fcd2a071f43ebc130',
+43 silly install resolved     _id: 'grunt-connect-proxy@0.2.0',
+43 silly install resolved     _shasum: '5d4ce827b55080a8f5d55360c80f4ab5626f46f8',
+43 silly install resolved     _from: 'grunt-connect-proxy@latest',
+43 silly install resolved     _npmVersion: '2.6.0',
+43 silly install resolved     _nodeVersion: '0.10.36',
+43 silly install resolved     _npmUser: { name: 'ruiaraujo', email: 'ruka.araujo@gmail.com' },
+43 silly install resolved     dist:
+43 silly install resolved      { shasum: '5d4ce827b55080a8f5d55360c80f4ab5626f46f8',
+43 silly install resolved        tarball: 'https://registry.npmjs.org/grunt-connect-proxy/-/grunt-connect-proxy-0.2.0.tgz' },
+43 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+43 silly install resolved     directories: {},
+43 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-connect-proxy/-/grunt-connect-proxy-0.2.0.tgz',
+43 silly install resolved     readme: 'ERROR: No README data found!' } ]
+44 info install grunt-connect-proxy@0.2.0 into /Users/liuxuewen/github_project/HongTui
+45 info installOne grunt-connect-proxy@0.2.0
+46 verbose installOne of grunt-connect-proxy to /Users/liuxuewen/github_project/HongTui not in flight; installing
+47 verbose correctMkdir /Users/liuxuewen/.npm/_locks correctMkdir not in flight; initializing
+48 verbose lock using /Users/liuxuewen/.npm/_locks/grunt-connect-proxy-3f2efcc4ea51ebdd.lock for /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy
+49 silly install write writing grunt-connect-proxy 0.2.0 to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy
+50 verbose unbuild node_modules/grunt-connect-proxy
+51 silly gentlyRm /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy is being purged from base /Users/liuxuewen/github_project/HongTui
+52 verbose gentlyRm don't care about contents; nuking /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy
+53 verbose tar unpack /Users/liuxuewen/.npm/grunt-connect-proxy/0.2.0/package.tgz
+54 verbose tar unpacking to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy
+55 silly gentlyRm /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy is being purged
+56 verbose gentlyRm don't care about contents; nuking /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy
+57 silly gunzTarPerm modes [ '755', '644' ]
+58 silly gunzTarPerm extractEntry package.json
+59 silly gunzTarPerm extractEntry .npmignore
+60 silly gunzTarPerm extractEntry README.md
+61 silly gunzTarPerm extractEntry Gruntfile.js
+62 silly gunzTarPerm extractEntry LICENSE-MIT
+63 silly gunzTarPerm extractEntry .jshintrc
+64 silly gunzTarPerm extractEntry examples/sample.yeoman.grunt.js
+65 silly gunzTarPerm extractEntry lib/utils.js
+66 silly gunzTarPerm extractEntry .editorconfig
+67 silly gunzTarPerm extractEntry tasks/connect_proxy.js
+68 silly gunzTarPerm extractEntry test/connect_proxy_test.js
+69 silly gunzTarPerm extractEntry test/hide_headers_test.js
+70 silly gunzTarPerm extractEntry test/request_test.js
+71 silly gunzTarPerm extractEntry test/server2_proxy_test.js
+72 silly gunzTarPerm extractEntry test/server3_proxy_test.js
+73 silly gunzTarPerm extractEntry test/utils_test.js
+74 verbose write writing to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/package.json
+75 info preinstall grunt-connect-proxy@0.2.0
+76 verbose readDependencies loading dependencies from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/package.json
+77 silly prepareForInstallMany adding http-proxy@~1.11.0 from grunt-connect-proxy dependencies
+78 silly prepareForInstallMany adding lodash@~0.9.0 from grunt-connect-proxy dependencies
+79 silly prepareForInstallMany adding grunt@~0.4.1 from grunt-connect-proxy peerDependencies
+80 warn peerDependencies The peer dependency grunt@~0.4.1 included from grunt-connect-proxy will no
+81 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+82 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+83 verbose readDependencies loading dependencies from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/package.json
+84 silly cache add args [ 'lodash@~0.9.0', null ]
+85 verbose cache add spec lodash@~0.9.0
+86 silly cache add parsed spec Result {
+86 silly cache add   raw: 'lodash@~0.9.0',
+86 silly cache add   scope: null,
+86 silly cache add   name: 'lodash',
+86 silly cache add   rawSpec: '~0.9.0',
+86 silly cache add   spec: '>=0.9.0 <0.10.0',
+86 silly cache add   type: 'range' }
+87 silly addNamed lodash@>=0.9.0 <0.10.0
+88 verbose addNamed ">=0.9.0 <0.10.0" is a valid semver range for lodash
+89 silly addNameRange { name: 'lodash', range: '>=0.9.0 <0.10.0', hasData: false }
+90 silly mapToRegistry name lodash
+91 silly mapToRegistry using default registry
+92 silly mapToRegistry registry https://registry.npmjs.org/
+93 silly mapToRegistry data Result {
+93 silly mapToRegistry   raw: 'lodash',
+93 silly mapToRegistry   scope: null,
+93 silly mapToRegistry   name: 'lodash',
+93 silly mapToRegistry   rawSpec: '',
+93 silly mapToRegistry   spec: 'latest',
+93 silly mapToRegistry   type: 'tag' }
+94 silly mapToRegistry uri https://registry.npmjs.org/lodash
+95 verbose addNameRange registry:https://registry.npmjs.org/lodash not in flight; fetching
+96 silly cache add args [ 'http-proxy@~1.11.0', null ]
+97 verbose cache add spec http-proxy@~1.11.0
+98 silly cache add parsed spec Result {
+98 silly cache add   raw: 'http-proxy@~1.11.0',
+98 silly cache add   scope: null,
+98 silly cache add   name: 'http-proxy',
+98 silly cache add   rawSpec: '~1.11.0',
+98 silly cache add   spec: '>=1.11.0 <1.12.0',
+98 silly cache add   type: 'range' }
+99 silly addNamed http-proxy@>=1.11.0 <1.12.0
+100 verbose addNamed ">=1.11.0 <1.12.0" is a valid semver range for http-proxy
+101 silly addNameRange { name: 'http-proxy', range: '>=1.11.0 <1.12.0', hasData: false }
+102 silly mapToRegistry name http-proxy
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npmjs.org/
+105 silly mapToRegistry data Result {
+105 silly mapToRegistry   raw: 'http-proxy',
+105 silly mapToRegistry   scope: null,
+105 silly mapToRegistry   name: 'http-proxy',
+105 silly mapToRegistry   rawSpec: '',
+105 silly mapToRegistry   spec: 'latest',
+105 silly mapToRegistry   type: 'tag' }
+106 silly mapToRegistry uri https://registry.npmjs.org/http-proxy
+107 verbose addNameRange registry:https://registry.npmjs.org/http-proxy not in flight; fetching
+108 verbose request uri https://registry.npmjs.org/http-proxy
+109 verbose request no auth needed
+110 info attempt registry request try #1 at 17:48:27
+111 verbose etag "1BPLCCXRWOUV2XPMQ1E7GQ4NM"
+112 http request GET https://registry.npmjs.org/http-proxy
+113 verbose request uri https://registry.npmjs.org/lodash
+114 verbose request no auth needed
+115 info attempt registry request try #1 at 17:48:27
+116 verbose etag "BM3JSA4YBW4YX2E7DB8WVNF4"
+117 http request GET https://registry.npmjs.org/lodash
+118 http 304 https://registry.npmjs.org/http-proxy
+119 verbose headers { date: 'Sat, 21 May 2016 09:48:28 GMT',
+119 verbose headers   via: '1.1 varnish',
+119 verbose headers   'cache-control': 'max-age=300',
+119 verbose headers   etag: '"1BPLCCXRWOUV2XPMQ1E7GQ4NM"',
+119 verbose headers   age: '48',
+119 verbose headers   connection: 'keep-alive',
+119 verbose headers   'x-served-by': 'cache-fra1232-FRA',
+119 verbose headers   'x-cache': 'HIT',
+119 verbose headers   'x-cache-hits': '3',
+119 verbose headers   'x-timer': 'S1463824108.009655,VS0,VE0',
+119 verbose headers   vary: 'Accept-Encoding' }
+120 silly get cb [ 304,
+120 silly get   { date: 'Sat, 21 May 2016 09:48:28 GMT',
+120 silly get     via: '1.1 varnish',
+120 silly get     'cache-control': 'max-age=300',
+120 silly get     etag: '"1BPLCCXRWOUV2XPMQ1E7GQ4NM"',
+120 silly get     age: '48',
+120 silly get     connection: 'keep-alive',
+120 silly get     'x-served-by': 'cache-fra1232-FRA',
+120 silly get     'x-cache': 'HIT',
+120 silly get     'x-cache-hits': '3',
+120 silly get     'x-timer': 'S1463824108.009655,VS0,VE0',
+120 silly get     vary: 'Accept-Encoding' } ]
+121 verbose etag https://registry.npmjs.org/http-proxy from cache
+122 verbose get saving http-proxy to /Users/liuxuewen/.npm/registry.npmjs.org/http-proxy/.cache.json
+123 verbose correctMkdir /Users/liuxuewen/.npm correctMkdir not in flight; initializing
+124 silly addNameRange number 2 { name: 'http-proxy', range: '>=1.11.0 <1.12.0', hasData: true }
+125 silly addNameRange versions [ 'http-proxy',
+125 silly addNameRange   [ '0.5.9',
+125 silly addNameRange     '0.5.10',
+125 silly addNameRange     '0.5.11',
+125 silly addNameRange     '0.6.0',
+125 silly addNameRange     '0.6.1',
+125 silly addNameRange     '0.6.2',
+125 silly addNameRange     '0.6.4',
+125 silly addNameRange     '0.6.5',
+125 silly addNameRange     '0.6.6',
+125 silly addNameRange     '0.7.0',
+125 silly addNameRange     '0.7.2',
+125 silly addNameRange     '0.7.3',
+125 silly addNameRange     '0.7.4',
+125 silly addNameRange     '0.7.5',
+125 silly addNameRange     '0.7.6',
+125 silly addNameRange     '0.8.0',
+125 silly addNameRange     '0.8.1',
+125 silly addNameRange     '0.8.2',
+125 silly addNameRange     '0.8.3',
+125 silly addNameRange     '0.8.4',
+125 silly addNameRange     '0.8.5',
+125 silly addNameRange     '0.8.6',
+125 silly addNameRange     '0.8.7',
+125 silly addNameRange     '0.9.0',
+125 silly addNameRange     '0.9.1',
+125 silly addNameRange     '0.10.0',
+125 silly addNameRange     '0.10.1',
+125 silly addNameRange     '0.10.2',
+125 silly addNameRange     '0.10.3',
+125 silly addNameRange     '0.10.4',
+125 silly addNameRange     '1.0.0',
+125 silly addNameRange     '1.0.1',
+125 silly addNameRange     '1.0.2',
+125 silly addNameRange     '1.0.3',
+125 silly addNameRange     '1.1.0',
+125 silly addNameRange     '1.1.1',
+125 silly addNameRange     '1.1.2',
+125 silly addNameRange     '1.1.3',
+125 silly addNameRange     '1.1.4',
+125 silly addNameRange     '1.1.5',
+125 silly addNameRange     '1.1.6',
+125 silly addNameRange     '1.2.0',
+125 silly addNameRange     '1.2.1',
+125 silly addNameRange     '1.3.0',
+125 silly addNameRange     '1.4.0',
+125 silly addNameRange     '1.4.1',
+125 silly addNameRange     '1.4.2',
+125 silly addNameRange     '1.4.3',
+125 silly addNameRange     '1.5.0',
+125 silly addNameRange     '1.5.1',
+125 silly addNameRange     '1.5.2',
+125 silly addNameRange     '1.5.3',
+125 silly addNameRange     '1.6.0',
+125 silly addNameRange     '1.6.1',
+125 silly addNameRange     '1.6.2',
+125 silly addNameRange     '1.7.0',
+125 silly addNameRange     '1.7.1',
+125 silly addNameRange     '1.7.2',
+125 silly addNameRange     '1.7.3',
+125 silly addNameRange     '1.8.0',
+125 silly addNameRange     '1.8.1',
+125 silly addNameRange     '1.9.0',
+125 silly addNameRange     '1.9.1',
+125 silly addNameRange     '1.10.0',
+125 silly addNameRange     '1.10.1',
+125 silly addNameRange     '1.11.0',
+125 silly addNameRange     '1.11.1',
+125 silly addNameRange     '1.11.2',
+125 silly addNameRange     '1.11.3',
+125 silly addNameRange     '1.12.0',
+125 silly addNameRange     '1.12.1',
+125 silly addNameRange     '1.13.0',
+125 silly addNameRange     '1.13.1',
+125 silly addNameRange     '1.13.2',
+125 silly addNameRange     '1.13.3' ] ]
+126 silly addNamed http-proxy@1.11.3
+127 verbose addNamed "1.11.3" is a plain semver version for http-proxy
+128 silly cache afterAdd http-proxy@1.11.3
+129 verbose afterAdd /Users/liuxuewen/.npm/http-proxy/1.11.3/package/package.json not in flight; writing
+130 verbose correctMkdir /Users/liuxuewen/.npm correctMkdir not in flight; initializing
+131 verbose afterAdd /Users/liuxuewen/.npm/http-proxy/1.11.3/package/package.json written
+132 http 304 https://registry.npmjs.org/lodash
+133 verbose headers { date: 'Sat, 21 May 2016 09:48:28 GMT',
+133 verbose headers   via: '1.1 varnish',
+133 verbose headers   'cache-control': 'max-age=300',
+133 verbose headers   etag: '"BM3JSA4YBW4YX2E7DB8WVNF4"',
+133 verbose headers   age: '24',
+133 verbose headers   connection: 'keep-alive',
+133 verbose headers   'x-served-by': 'cache-fra1241-FRA',
+133 verbose headers   'x-cache': 'HIT',
+133 verbose headers   'x-cache-hits': '1',
+133 verbose headers   'x-timer': 'S1463824108.391607,VS0,VE0',
+133 verbose headers   vary: 'Accept-Encoding' }
+134 silly get cb [ 304,
+134 silly get   { date: 'Sat, 21 May 2016 09:48:28 GMT',
+134 silly get     via: '1.1 varnish',
+134 silly get     'cache-control': 'max-age=300',
+134 silly get     etag: '"BM3JSA4YBW4YX2E7DB8WVNF4"',
+134 silly get     age: '24',
+134 silly get     connection: 'keep-alive',
+134 silly get     'x-served-by': 'cache-fra1241-FRA',
+134 silly get     'x-cache': 'HIT',
+134 silly get     'x-cache-hits': '1',
+134 silly get     'x-timer': 'S1463824108.391607,VS0,VE0',
+134 silly get     vary: 'Accept-Encoding' } ]
+135 verbose etag https://registry.npmjs.org/lodash from cache
+136 verbose get saving lodash to /Users/liuxuewen/.npm/registry.npmjs.org/lodash/.cache.json
+137 verbose correctMkdir /Users/liuxuewen/.npm correctMkdir not in flight; initializing
+138 silly addNameRange number 2 { name: 'lodash', range: '>=0.9.0 <0.10.0', hasData: true }
+139 silly addNameRange versions [ 'lodash',
+139 silly addNameRange   [ '0.1.0',
+139 silly addNameRange     '0.2.0',
+139 silly addNameRange     '0.2.1',
+139 silly addNameRange     '0.2.2',
+139 silly addNameRange     '0.3.0',
+139 silly addNameRange     '0.3.1',
+139 silly addNameRange     '0.3.2',
+139 silly addNameRange     '0.4.0',
+139 silly addNameRange     '0.4.1',
+139 silly addNameRange     '0.4.2',
+139 silly addNameRange     '0.5.0-rc.1',
+139 silly addNameRange     '0.5.0',
+139 silly addNameRange     '0.5.1',
+139 silly addNameRange     '0.5.2',
+139 silly addNameRange     '0.6.0',
+139 silly addNameRange     '0.6.1',
+139 silly addNameRange     '0.7.0',
+139 silly addNameRange     '0.8.0',
+139 silly addNameRange     '0.8.1',
+139 silly addNameRange     '0.8.2',
+139 silly addNameRange     '0.9.0',
+139 silly addNameRange     '0.9.1',
+139 silly addNameRange     '0.9.2',
+139 silly addNameRange     '0.10.0',
+139 silly addNameRange     '1.0.0-rc.1',
+139 silly addNameRange     '1.0.0-rc.2',
+139 silly addNameRange     '1.0.0-rc.3',
+139 silly addNameRange     '1.0.0',
+139 silly addNameRange     '1.0.1',
+139 silly addNameRange     '1.1.0',
+139 silly addNameRange     '1.1.1',
+139 silly addNameRange     '1.2.0',
+139 silly addNameRange     '1.2.1',
+139 silly addNameRange     '1.3.0',
+139 silly addNameRange     '1.3.1',
+139 silly addNameRange     '2.0.0',
+139 silly addNameRange     '2.1.0',
+139 silly addNameRange     '2.2.0',
+139 silly addNameRange     '2.2.1',
+139 silly addNameRange     '2.3.0',
+139 silly addNameRange     '2.4.0',
+139 silly addNameRange     '2.4.1',
+139 silly addNameRange     '3.0.0',
+139 silly addNameRange     '3.0.1',
+139 silly addNameRange     '3.1.0',
+139 silly addNameRange     '3.2.0',
+139 silly addNameRange     '3.3.0',
+139 silly addNameRange     '3.3.1',
+139 silly addNameRange     '3.4.0',
+139 silly addNameRange     '3.5.0',
+139 silly addNameRange     '3.6.0',
+139 silly addNameRange     '1.0.2',
+139 silly addNameRange     '3.7.0',
+139 silly addNameRange     '2.4.2',
+139 silly addNameRange     '3.8.0',
+139 silly addNameRange     '3.9.0',
+139 silly addNameRange     '3.9.1',
+139 silly addNameRange     '3.9.2',
+139 silly addNameRange     '3.9.3',
+139 silly addNameRange     '3.10.0',
+139 silly addNameRange     '3.10.1',
+139 silly addNameRange     '4.0.0',
+139 silly addNameRange     '4.0.1',
+139 silly addNameRange     '4.1.0',
+139 silly addNameRange     '4.2.0',
+139 silly addNameRange     '4.2.1',
+139 silly addNameRange     '4.3.0',
+139 silly addNameRange     '4.4.0',
+139 silly addNameRange     '4.5.0',
+139 silly addNameRange     '4.5.1',
+139 silly addNameRange     '4.6.0',
+139 silly addNameRange     '4.6.1',
+139 silly addNameRange     '4.7.0',
+139 silly addNameRange     '4.8.0',
+139 silly addNameRange     '4.8.1',
+139 silly addNameRange     '4.8.2',
+139 silly addNameRange     '4.9.0',
+139 silly addNameRange     '4.10.0',
+139 silly addNameRange     '4.11.0',
+139 silly addNameRange     '4.11.1',
+139 silly addNameRange     '4.11.2',
+139 silly addNameRange     '4.12.0' ] ]
+140 silly addNamed lodash@0.9.2
+141 verbose addNamed "0.9.2" is a plain semver version for lodash
+142 silly cache afterAdd lodash@0.9.2
+143 verbose afterAdd /Users/liuxuewen/.npm/lodash/0.9.2/package/package.json not in flight; writing
+144 verbose correctMkdir /Users/liuxuewen/.npm correctMkdir not in flight; initializing
+145 verbose afterAdd /Users/liuxuewen/.npm/lodash/0.9.2/package/package.json written
+146 silly install resolved [ { name: 'http-proxy',
+146 silly install resolved     version: '1.11.3',
+146 silly install resolved     repository:
+146 silly install resolved      { type: 'git',
+146 silly install resolved        url: 'git+https://github.com/nodejitsu/node-http-proxy.git' },
+146 silly install resolved     description: 'HTTP proxying for the masses',
+146 silly install resolved     author: { name: 'Nodejitsu Inc.', email: 'info@nodejitsu.com' },
+146 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+146 silly install resolved     main: 'index.js',
+146 silly install resolved     dependencies: { eventemitter3: '1.x.x', 'requires-port': '0.x.x' },
+146 silly install resolved     devDependencies:
+146 silly install resolved      { async: '*',
+146 silly install resolved        blanket: '*',
+146 silly install resolved        coveralls: '*',
+146 silly install resolved        dox: '*',
+146 silly install resolved        'expect.js': '*',
+146 silly install resolved        mocha: '*',
+146 silly install resolved        'mocha-lcov-reporter': '*',
+146 silly install resolved        semver: '^4.3.3',
+146 silly install resolved        'socket.io': '*',
+146 silly install resolved        'socket.io-client': '*',
+146 silly install resolved        ws: '~0.5.0' },
+146 silly install resolved     scripts:
+146 silly install resolved      { coveralls: 'mocha --require blanket --reporter mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js',
+146 silly install resolved        test: 'mocha -R landing test/*-test.js',
+146 silly install resolved        'test-cov': 'mocha --require blanket -R html-cov > cov/coverage.html' },
+146 silly install resolved     engines: { node: '>=0.10.0' },
+146 silly install resolved     license: 'MIT',
+146 silly install resolved     gitHead: '60baca5aed4f45ef1d7b3f7edd909375853d344b',
+146 silly install resolved     bugs: { url: 'https://github.com/nodejitsu/node-http-proxy/issues' },
+146 silly install resolved     homepage: 'https://github.com/nodejitsu/node-http-proxy#readme',
+146 silly install resolved     _id: 'http-proxy@1.11.3',
+146 silly install resolved     _shasum: '1915dc888751e2a6bf3c2abfcb1808fa86c72353',
+146 silly install resolved     _from: 'http-proxy@>=1.11.0 <1.12.0',
+146 silly install resolved     _npmVersion: '2.14.7',
+146 silly install resolved     _nodeVersion: '4.2.1',
+146 silly install resolved     _npmUser: { name: 'jcrugzz', email: 'jcrugzz@gmail.com' },
+146 silly install resolved     dist:
+146 silly install resolved      { shasum: '1915dc888751e2a6bf3c2abfcb1808fa86c72353',
+146 silly install resolved        tarball: 'https://registry.npmjs.org/http-proxy/-/http-proxy-1.11.3.tgz' },
+146 silly install resolved     directories: {},
+146 silly install resolved     _resolved: 'https://registry.npmjs.org/http-proxy/-/http-proxy-1.11.3.tgz',
+146 silly install resolved     readme: 'ERROR: No README data found!' },
+146 silly install resolved   { name: 'lodash',
+146 silly install resolved     version: '0.9.2',
+146 silly install resolved     description: 'A utility library delivering consistency, customization, performance, and extras.',
+146 silly install resolved     homepage: 'http://lodash.com',
+146 silly install resolved     license: 'MIT',
+146 silly install resolved     main: './lodash.js',
+146 silly install resolved     keywords:
+146 silly install resolved      [ 'browser',
+146 silly install resolved        'client',
+146 silly install resolved        'functional',
+146 silly install resolved        'performance',
+146 silly install resolved        'server',
+146 silly install resolved        'speed',
+146 silly install resolved        'util' ],
+146 silly install resolved     author:
+146 silly install resolved      { name: 'John-David Dalton',
+146 silly install resolved        email: 'john.david.dalton@gmail.com',
+146 silly install resolved        url: 'http://allyoucanleet.com/' },
+146 silly install resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+146 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+146 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+146 silly install resolved     engines: [ 'node', 'rhino' ],
+146 silly install resolved     jam: { main: './lodash.js' },
+146 silly install resolved     _id: 'lodash@0.9.2',
+146 silly install resolved     dist:
+146 silly install resolved      { shasum: '8f3499c5245d346d682e5b0d3b40767e09f1a92c',
+146 silly install resolved        tarball: 'https://registry.npmjs.org/lodash/-/lodash-0.9.2.tgz' },
+146 silly install resolved     _from: 'lodash@>=0.9.0 <0.10.0',
+146 silly install resolved     _npmVersion: '1.2.24',
+146 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+146 silly install resolved     maintainers: [ [Object] ],
+146 silly install resolved     directories: {},
+146 silly install resolved     _shasum: '8f3499c5245d346d682e5b0d3b40767e09f1a92c',
+146 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash/-/lodash-0.9.2.tgz',
+146 silly install resolved     readme: 'ERROR: No README data found!' } ]
+147 info install http-proxy@1.11.3 into /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy
+148 info install lodash@0.9.2 into /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy
+149 info installOne http-proxy@1.11.3
+150 verbose installOne of http-proxy to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy not in flight; installing
+151 verbose correctMkdir /Users/liuxuewen/.npm/_locks correctMkdir not in flight; initializing
+152 info installOne lodash@0.9.2
+153 verbose installOne of lodash to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy not in flight; installing
+154 verbose correctMkdir /Users/liuxuewen/.npm/_locks correctMkdir not in flight; initializing
+155 verbose lock using /Users/liuxuewen/.npm/_locks/http-proxy-4e39f4829923e043.lock for /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy
+156 verbose lock using /Users/liuxuewen/.npm/_locks/lodash-dbe4bb501f430635.lock for /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/lodash
+157 silly install write writing http-proxy 1.11.3 to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy
+158 silly install write writing lodash 0.9.2 to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/lodash
+159 verbose unbuild node_modules/grunt-connect-proxy/node_modules/lodash
+160 verbose unbuild node_modules/grunt-connect-proxy/node_modules/http-proxy
+161 silly gentlyRm /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/lodash is being purged from base /Users/liuxuewen/github_project/HongTui
+162 verbose gentlyRm don't care about contents; nuking /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/lodash
+163 silly gentlyRm /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy is being purged from base /Users/liuxuewen/github_project/HongTui
+164 verbose gentlyRm don't care about contents; nuking /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy
+165 verbose tar unpack /Users/liuxuewen/.npm/lodash/0.9.2/package.tgz
+166 verbose tar unpacking to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/lodash
+167 silly gentlyRm /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/lodash is being purged
+168 verbose gentlyRm don't care about contents; nuking /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/lodash
+169 verbose tar unpack /Users/liuxuewen/.npm/http-proxy/1.11.3/package.tgz
+170 verbose tar unpacking to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy
+171 silly gentlyRm /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy is being purged
+172 verbose gentlyRm don't care about contents; nuking /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy
+173 silly gunzTarPerm modes [ '755', '644' ]
+174 silly gunzTarPerm modes [ '755', '644' ]
+175 silly gunzTarPerm extractEntry package.json
+176 silly gunzTarPerm extractEntry package.json
+177 silly gunzTarPerm extractEntry README.md
+178 silly gunzTarPerm extractEntry lodash.js
+179 silly gunzTarPerm extractEntry .npmignore
+180 silly gunzTarPerm extractEntry README.md
+181 silly gunzTarPerm extractEntry LICENSE
+182 silly gunzTarPerm extractEntry lodash.min.js
+183 silly gunzTarPerm extractEntry index.js
+184 silly gunzTarPerm extractEntry lib/http-proxy.js
+185 silly gunzTarPerm extractEntry lodash.underscore.js
+186 silly gunzTarPerm extractEntry lodash.underscore.min.js
+187 silly gunzTarPerm extractEntry lib/http-proxy/common.js
+188 silly gunzTarPerm extractEntry lib/http-proxy/index.js
+189 silly gunzTarPerm extractEntry lib/http-proxy/passes/web-incoming.js
+190 silly gunzTarPerm extractEntry lib/http-proxy/passes/web-outgoing.js
+191 silly gunzTarPerm extractEntry lib/http-proxy/passes/ws-incoming.js
+192 verbose write writing to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/lodash/package.json
+193 info preinstall lodash@0.9.2
+194 verbose readDependencies loading dependencies from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/lodash/package.json
+195 verbose readDependencies loading dependencies from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/lodash/package.json
+196 silly install resolved []
+197 verbose about to build /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/lodash
+198 info build /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/lodash
+199 verbose write writing to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/package.json
+200 info linkStuff lodash@0.9.2
+201 silly linkStuff lodash@0.9.2 has /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules as its parent node_modules
+202 info preinstall http-proxy@1.11.3
+203 verbose readDependencies loading dependencies from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/package.json
+204 verbose linkBins lodash@0.9.2
+205 verbose linkMans lodash@0.9.2
+206 verbose rebuildBundles lodash@0.9.2
+207 info install lodash@0.9.2
+208 silly prepareForInstallMany adding eventemitter3@1.x.x from http-proxy dependencies
+209 silly prepareForInstallMany adding requires-port@0.x.x from http-proxy dependencies
+210 verbose readDependencies loading dependencies from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/package.json
+211 info postinstall lodash@0.9.2
+212 verbose unlock done using /Users/liuxuewen/.npm/_locks/lodash-dbe4bb501f430635.lock for /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/lodash
+213 silly cache add args [ 'eventemitter3@1.x.x', null ]
+214 verbose cache add spec eventemitter3@1.x.x
+215 silly cache add args [ 'requires-port@0.x.x', null ]
+216 verbose cache add spec requires-port@0.x.x
+217 silly cache add parsed spec Result {
+217 silly cache add   raw: 'eventemitter3@1.x.x',
+217 silly cache add   scope: null,
+217 silly cache add   name: 'eventemitter3',
+217 silly cache add   rawSpec: '1.x.x',
+217 silly cache add   spec: '>=1.0.0 <2.0.0',
+217 silly cache add   type: 'range' }
+218 silly addNamed eventemitter3@>=1.0.0 <2.0.0
+219 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for eventemitter3
+220 silly addNameRange { name: 'eventemitter3',
+220 silly addNameRange   range: '>=1.0.0 <2.0.0',
+220 silly addNameRange   hasData: false }
+221 silly mapToRegistry name eventemitter3
+222 silly mapToRegistry using default registry
+223 silly mapToRegistry registry https://registry.npmjs.org/
+224 silly mapToRegistry data Result {
+224 silly mapToRegistry   raw: 'eventemitter3',
+224 silly mapToRegistry   scope: null,
+224 silly mapToRegistry   name: 'eventemitter3',
+224 silly mapToRegistry   rawSpec: '',
+224 silly mapToRegistry   spec: 'latest',
+224 silly mapToRegistry   type: 'tag' }
+225 silly mapToRegistry uri https://registry.npmjs.org/eventemitter3
+226 verbose addNameRange registry:https://registry.npmjs.org/eventemitter3 not in flight; fetching
+227 silly cache add parsed spec Result {
+227 silly cache add   raw: 'requires-port@0.x.x',
+227 silly cache add   scope: null,
+227 silly cache add   name: 'requires-port',
+227 silly cache add   rawSpec: '0.x.x',
+227 silly cache add   spec: '>=0.0.0 <1.0.0',
+227 silly cache add   type: 'range' }
+228 silly addNamed requires-port@>=0.0.0 <1.0.0
+229 verbose addNamed ">=0.0.0 <1.0.0" is a valid semver range for requires-port
+230 silly addNameRange { name: 'requires-port',
+230 silly addNameRange   range: '>=0.0.0 <1.0.0',
+230 silly addNameRange   hasData: false }
+231 silly mapToRegistry name requires-port
+232 silly mapToRegistry using default registry
+233 silly mapToRegistry registry https://registry.npmjs.org/
+234 silly mapToRegistry data Result {
+234 silly mapToRegistry   raw: 'requires-port',
+234 silly mapToRegistry   scope: null,
+234 silly mapToRegistry   name: 'requires-port',
+234 silly mapToRegistry   rawSpec: '',
+234 silly mapToRegistry   spec: 'latest',
+234 silly mapToRegistry   type: 'tag' }
+235 silly mapToRegistry uri https://registry.npmjs.org/requires-port
+236 verbose addNameRange registry:https://registry.npmjs.org/requires-port not in flight; fetching
+237 verbose request uri https://registry.npmjs.org/requires-port
+238 verbose request no auth needed
+239 info attempt registry request try #1 at 17:48:28
+240 verbose etag "E0O0T58ME0HOXF1OX00AGM99O"
+241 http request GET https://registry.npmjs.org/requires-port
+242 verbose request uri https://registry.npmjs.org/eventemitter3
+243 verbose request no auth needed
+244 info attempt registry request try #1 at 17:48:28
+245 verbose etag "8DEZDGF5FLRRMDZOXBV7WJ1UX"
+246 http request GET https://registry.npmjs.org/eventemitter3
+247 http 200 https://registry.npmjs.org/requires-port
+248 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+248 verbose headers   etag: '"ARJXJ3TE05MRVPDOK92YQQVD1"',
+248 verbose headers   'content-type': 'application/json',
+248 verbose headers   'content-encoding': 'gzip',
+248 verbose headers   'cache-control': 'max-age=300',
+248 verbose headers   'content-length': '2127',
+248 verbose headers   'accept-ranges': 'bytes',
+248 verbose headers   date: 'Sat, 21 May 2016 09:48:28 GMT',
+248 verbose headers   via: '1.1 varnish',
+248 verbose headers   age: '25',
+248 verbose headers   connection: 'keep-alive',
+248 verbose headers   'x-served-by': 'cache-fra1232-FRA',
+248 verbose headers   'x-cache': 'HIT',
+248 verbose headers   'x-cache-hits': '1',
+248 verbose headers   'x-timer': 'S1463824108.765941,VS0,VE0',
+248 verbose headers   vary: 'Accept-Encoding' }
+249 silly get cb [ 200,
+249 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+249 silly get     etag: '"ARJXJ3TE05MRVPDOK92YQQVD1"',
+249 silly get     'content-type': 'application/json',
+249 silly get     'content-encoding': 'gzip',
+249 silly get     'cache-control': 'max-age=300',
+249 silly get     'content-length': '2127',
+249 silly get     'accept-ranges': 'bytes',
+249 silly get     date: 'Sat, 21 May 2016 09:48:28 GMT',
+249 silly get     via: '1.1 varnish',
+249 silly get     age: '25',
+249 silly get     connection: 'keep-alive',
+249 silly get     'x-served-by': 'cache-fra1232-FRA',
+249 silly get     'x-cache': 'HIT',
+249 silly get     'x-cache-hits': '1',
+249 silly get     'x-timer': 'S1463824108.765941,VS0,VE0',
+249 silly get     vary: 'Accept-Encoding' } ]
+250 verbose get saving requires-port to /Users/liuxuewen/.npm/registry.npmjs.org/requires-port/.cache.json
+251 verbose correctMkdir /Users/liuxuewen/.npm correctMkdir not in flight; initializing
+252 http 200 https://registry.npmjs.org/eventemitter3
+253 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+253 verbose headers   etag: '"BM4RIELNX1HHIMA91XPB9SHDR"',
+253 verbose headers   'content-type': 'application/json',
+253 verbose headers   'content-encoding': 'gzip',
+253 verbose headers   'cache-control': 'max-age=300',
+253 verbose headers   'content-length': '5047',
+253 verbose headers   'accept-ranges': 'bytes',
+253 verbose headers   date: 'Sat, 21 May 2016 09:48:28 GMT',
+253 verbose headers   via: '1.1 varnish',
+253 verbose headers   age: '26',
+253 verbose headers   connection: 'keep-alive',
+253 verbose headers   'x-served-by': 'cache-fra1241-FRA',
+253 verbose headers   'x-cache': 'HIT',
+253 verbose headers   'x-cache-hits': '1',
+253 verbose headers   'x-timer': 'S1463824108.770862,VS0,VE0',
+253 verbose headers   vary: 'Accept-Encoding' }
+254 silly get cb [ 200,
+254 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+254 silly get     etag: '"BM4RIELNX1HHIMA91XPB9SHDR"',
+254 silly get     'content-type': 'application/json',
+254 silly get     'content-encoding': 'gzip',
+254 silly get     'cache-control': 'max-age=300',
+254 silly get     'content-length': '5047',
+254 silly get     'accept-ranges': 'bytes',
+254 silly get     date: 'Sat, 21 May 2016 09:48:28 GMT',
+254 silly get     via: '1.1 varnish',
+254 silly get     age: '26',
+254 silly get     connection: 'keep-alive',
+254 silly get     'x-served-by': 'cache-fra1241-FRA',
+254 silly get     'x-cache': 'HIT',
+254 silly get     'x-cache-hits': '1',
+254 silly get     'x-timer': 'S1463824108.770862,VS0,VE0',
+254 silly get     vary: 'Accept-Encoding' } ]
+255 verbose get saving eventemitter3 to /Users/liuxuewen/.npm/registry.npmjs.org/eventemitter3/.cache.json
+256 verbose correctMkdir /Users/liuxuewen/.npm correctMkdir not in flight; initializing
+257 silly addNameRange number 2 { name: 'requires-port', range: '>=0.0.0 <1.0.0', hasData: true }
+258 silly addNameRange versions [ 'requires-port', [ '0.0.0', '0.0.1', '1.0.0' ] ]
+259 silly addNamed requires-port@0.0.1
+260 verbose addNamed "0.0.1" is a plain semver version for requires-port
+261 silly addNameRange number 2 { name: 'eventemitter3', range: '>=1.0.0 <2.0.0', hasData: true }
+262 silly addNameRange versions [ 'eventemitter3',
+262 silly addNameRange   [ '0.0.0',
+262 silly addNameRange     '0.0.1',
+262 silly addNameRange     '0.1.0',
+262 silly addNameRange     '0.1.1',
+262 silly addNameRange     '0.1.2',
+262 silly addNameRange     '0.1.3',
+262 silly addNameRange     '0.1.4',
+262 silly addNameRange     '0.1.5',
+262 silly addNameRange     '0.1.6',
+262 silly addNameRange     '1.0.0',
+262 silly addNameRange     '1.0.1',
+262 silly addNameRange     '1.0.2',
+262 silly addNameRange     '1.0.3',
+262 silly addNameRange     '1.1.0',
+262 silly addNameRange     '1.1.1',
+262 silly addNameRange     '1.2.0' ] ]
+263 silly addNamed eventemitter3@1.2.0
+264 verbose addNamed "1.2.0" is a plain semver version for eventemitter3
+265 silly cache afterAdd requires-port@0.0.1
+266 verbose afterAdd /Users/liuxuewen/.npm/requires-port/0.0.1/package/package.json not in flight; writing
+267 verbose correctMkdir /Users/liuxuewen/.npm correctMkdir not in flight; initializing
+268 silly cache afterAdd eventemitter3@1.2.0
+269 verbose afterAdd /Users/liuxuewen/.npm/eventemitter3/1.2.0/package/package.json not in flight; writing
+270 verbose correctMkdir /Users/liuxuewen/.npm correctMkdir not in flight; initializing
+271 verbose afterAdd /Users/liuxuewen/.npm/requires-port/0.0.1/package/package.json written
+272 verbose afterAdd /Users/liuxuewen/.npm/eventemitter3/1.2.0/package/package.json written
+273 silly install resolved [ { name: 'requires-port',
+273 silly install resolved     version: '0.0.1',
+273 silly install resolved     description: 'Check if a protocol requires a certain port number to be added to an URL.',
+273 silly install resolved     main: 'index.js',
+273 silly install resolved     scripts:
+273 silly install resolved      { '100%': 'istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100',
+273 silly install resolved        test: 'mocha test.js',
+273 silly install resolved        watch: 'mocha --watch test.js',
+273 silly install resolved        coverage: 'istanbul cover ./node_modules/.bin/_mocha -- test.js',
+273 silly install resolved        'test-travis': 'istanbul cover node_modules/.bin/_mocha --report lcovonly -- test.js' },
+273 silly install resolved     repository:
+273 silly install resolved      { type: 'git',
+273 silly install resolved        url: 'git+https://github.com/unshiftio/requires-port.git' },
+273 silly install resolved     keywords:
+273 silly install resolved      [ 'port',
+273 silly install resolved        'require',
+273 silly install resolved        'http',
+273 silly install resolved        'https',
+273 silly install resolved        'ws',
+273 silly install resolved        'wss',
+273 silly install resolved        'gopher',
+273 silly install resolved        'file',
+273 silly install resolved        'ftp',
+273 silly install resolved        'requires',
+273 silly install resolved        'requried',
+273 silly install resolved        'portnumber',
+273 silly install resolved        'url',
+273 silly install resolved        'parsing',
+273 silly install resolved        'validation',
+273 silly install resolved        'cows' ],
+273 silly install resolved     author: { name: 'Arnout Kazemier' },
+273 silly install resolved     license: 'MIT',
+273 silly install resolved     bugs: { url: 'https://github.com/unshiftio/requires-port/issues' },
+273 silly install resolved     homepage: 'https://github.com/unshiftio/requires-port',
+273 silly install resolved     devDependencies:
+273 silly install resolved      { assume: '1.1.x',
+273 silly install resolved        istanbul: '0.3.x',
+273 silly install resolved        mocha: '2.1.x',
+273 silly install resolved        'pre-commit': '1.0.x' },
+273 silly install resolved     gitHead: 'd6235df7aa7e8d08e9ac72c842e1e2c6c366376f',
+273 silly install resolved     _id: 'requires-port@0.0.1',
+273 silly install resolved     _shasum: '4b4414411d9df7c855995dd899a8c78a2951c16d',
+273 silly install resolved     _from: 'requires-port@>=0.0.0 <1.0.0',
+273 silly install resolved     _npmVersion: '2.9.1',
+273 silly install resolved     _nodeVersion: '0.12.3',
+273 silly install resolved     _npmUser: { name: '3rdeden', email: 'npm@3rd-Eden.com' },
+273 silly install resolved     maintainers: [ [Object], [Object] ],
+273 silly install resolved     dist:
+273 silly install resolved      { shasum: '4b4414411d9df7c855995dd899a8c78a2951c16d',
+273 silly install resolved        tarball: 'https://registry.npmjs.org/requires-port/-/requires-port-0.0.1.tgz' },
+273 silly install resolved     directories: {},
+273 silly install resolved     _resolved: 'https://registry.npmjs.org/requires-port/-/requires-port-0.0.1.tgz',
+273 silly install resolved     readme: 'ERROR: No README data found!' },
+273 silly install resolved   { name: 'eventemitter3',
+273 silly install resolved     version: '1.2.0',
+273 silly install resolved     description: 'EventEmitter3 focuses on performance while maintaining a Node.js AND browser compatible interface.',
+273 silly install resolved     main: 'index.js',
+273 silly install resolved     scripts:
+273 silly install resolved      { 'test-node': 'istanbul cover _mocha --report lcovonly -- test.js',
+273 silly install resolved        coverage: 'istanbul cover _mocha -- test.js',
+273 silly install resolved        'test-browser': 'zuul -- test.js',
+273 silly install resolved        sync: 'node versions.js',
+273 silly install resolved        test: 'mocha test.js' },
+273 silly install resolved     repository:
+273 silly install resolved      { type: 'git',
+273 silly install resolved        url: 'git://github.com/primus/eventemitter3.git' },
+273 silly install resolved     keywords:
+273 silly install resolved      [ 'EventEmitter',
+273 silly install resolved        'EventEmitter2',
+273 silly install resolved        'EventEmitter3',
+273 silly install resolved        'Events',
+273 silly install resolved        'addEventListener',
+273 silly install resolved        'addListener',
+273 silly install resolved        'emit',
+273 silly install resolved        'emits',
+273 silly install resolved        'emitter',
+273 silly install resolved        'event',
+273 silly install resolved        'once',
+273 silly install resolved        'pub/sub',
+273 silly install resolved        'publish',
+273 silly install resolved        'reactor',
+273 silly install resolved        'subscribe' ],
+273 silly install resolved     author: { name: 'Arnout Kazemier' },
+273 silly install resolved     license: 'MIT',
+273 silly install resolved     bugs: { url: 'https://github.com/primus/eventemitter3/issues' },
+273 silly install resolved     'pre-commit': 'sync, test',
+273 silly install resolved     devDependencies:
+273 silly install resolved      { assume: '1.3.x',
+273 silly install resolved        istanbul: '0.4.x',
+273 silly install resolved        mocha: '2.4.x',
+273 silly install resolved        'pre-commit': '1.1.x',
+273 silly install resolved        zuul: '3.10.x' },
+273 silly install resolved     gitHead: 'c78d597fed80952c259b916c0a1f4dca91d940e4',
+273 silly install resolved     homepage: 'https://github.com/primus/eventemitter3#readme',
+273 silly install resolved     _id: 'eventemitter3@1.2.0',
+273 silly install resolved     _shasum: '1c86991d816ad1e504750e73874224ecf3bec508',
+273 silly install resolved     _from: 'eventemitter3@>=1.0.0 <2.0.0',
+273 silly install resolved     _npmVersion: '3.8.0',
+273 silly install resolved     _nodeVersion: '4.3.1',
+273 silly install resolved     _npmUser: { name: '3rdeden', email: 'npm@3rd-Eden.com' },
+273 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+273 silly install resolved     dist:
+273 silly install resolved      { shasum: '1c86991d816ad1e504750e73874224ecf3bec508',
+273 silly install resolved        tarball: 'https://registry.npmjs.org/eventemitter3/-/eventemitter3-1.2.0.tgz' },
+273 silly install resolved     _npmOperationalInternal:
+273 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+273 silly install resolved        tmp: 'tmp/eventemitter3-1.2.0.tgz_1458148661717_0.1867425285745412' },
+273 silly install resolved     directories: {},
+273 silly install resolved     _resolved: 'https://registry.npmjs.org/eventemitter3/-/eventemitter3-1.2.0.tgz',
+273 silly install resolved     readme: 'ERROR: No README data found!' } ]
+274 info install requires-port@0.0.1 into /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy
+275 info install eventemitter3@1.2.0 into /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy
+276 info installOne requires-port@0.0.1
+277 verbose installOne of requires-port to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy not in flight; installing
+278 verbose correctMkdir /Users/liuxuewen/.npm/_locks correctMkdir not in flight; initializing
+279 info installOne eventemitter3@1.2.0
+280 verbose installOne of eventemitter3 to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy not in flight; installing
+281 verbose correctMkdir /Users/liuxuewen/.npm/_locks correctMkdir not in flight; initializing
+282 verbose lock using /Users/liuxuewen/.npm/_locks/requires-port-c79d2667bd22e39d.lock for /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port
+283 silly install write writing requires-port 0.0.1 to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port
+284 verbose lock using /Users/liuxuewen/.npm/_locks/eventemitter3-e004446cab7dc1e1.lock for /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3
+285 silly install write writing eventemitter3 1.2.0 to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3
+286 verbose unbuild node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port
+287 verbose unbuild node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3
+288 silly gentlyRm /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port is being purged from base /Users/liuxuewen/github_project/HongTui
+289 verbose gentlyRm don't care about contents; nuking /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port
+290 silly gentlyRm /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3 is being purged from base /Users/liuxuewen/github_project/HongTui
+291 verbose gentlyRm don't care about contents; nuking /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3
+292 verbose tar unpack /Users/liuxuewen/.npm/requires-port/0.0.1/package.tgz
+293 verbose tar unpacking to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port
+294 silly gentlyRm /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port is being purged
+295 verbose gentlyRm don't care about contents; nuking /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port
+296 verbose tar unpack /Users/liuxuewen/.npm/eventemitter3/1.2.0/package.tgz
+297 verbose tar unpacking to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3
+298 silly gentlyRm /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3 is being purged
+299 verbose gentlyRm don't care about contents; nuking /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3
+300 silly gunzTarPerm modes [ '755', '644' ]
+301 silly gunzTarPerm modes [ '755', '644' ]
+302 silly gunzTarPerm extractEntry package.json
+303 silly gunzTarPerm extractEntry package.json
+304 silly gunzTarPerm extractEntry .npmignore
+305 silly gunzTarPerm extractEntry README.md
+306 silly gunzTarPerm extractEntry README.md
+307 silly gunzTarPerm extractEntry LICENSE
+308 silly gunzTarPerm extractEntry index.js
+309 silly gunzTarPerm extractEntry LICENSE
+310 silly gunzTarPerm extractEntry index.js
+311 silly gunzTarPerm extractEntry test.js
+312 silly gunzTarPerm extractEntry .travis.yml
+313 verbose write writing to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3/package.json
+314 info preinstall eventemitter3@1.2.0
+315 verbose readDependencies loading dependencies from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3/package.json
+316 verbose readDependencies loading dependencies from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3/package.json
+317 silly install resolved []
+318 verbose about to build /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3
+319 info build /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3
+320 info linkStuff eventemitter3@1.2.0
+321 silly linkStuff eventemitter3@1.2.0 has /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules as its parent node_modules
+322 verbose linkBins eventemitter3@1.2.0
+323 verbose linkMans eventemitter3@1.2.0
+324 verbose rebuildBundles eventemitter3@1.2.0
+325 verbose write writing to /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port/package.json
+326 info install eventemitter3@1.2.0
+327 info postinstall eventemitter3@1.2.0
+328 info preinstall requires-port@0.0.1
+329 verbose unlock done using /Users/liuxuewen/.npm/_locks/eventemitter3-e004446cab7dc1e1.lock for /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/eventemitter3
+330 verbose readDependencies loading dependencies from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port/package.json
+331 verbose readDependencies loading dependencies from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port/package.json
+332 silly install resolved []
+333 verbose about to build /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port
+334 info build /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port
+335 info linkStuff requires-port@0.0.1
+336 silly linkStuff requires-port@0.0.1 has /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules as its parent node_modules
+337 verbose linkBins requires-port@0.0.1
+338 verbose linkMans requires-port@0.0.1
+339 verbose rebuildBundles requires-port@0.0.1
+340 info install requires-port@0.0.1
+341 info postinstall requires-port@0.0.1
+342 verbose unlock done using /Users/liuxuewen/.npm/_locks/requires-port-c79d2667bd22e39d.lock for /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy/node_modules/requires-port
+343 verbose about to build /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy
+344 info build /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy
+345 info linkStuff http-proxy@1.11.3
+346 silly linkStuff http-proxy@1.11.3 has /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules as its parent node_modules
+347 verbose linkBins http-proxy@1.11.3
+348 verbose linkMans http-proxy@1.11.3
+349 verbose rebuildBundles http-proxy@1.11.3
+350 verbose rebuildBundles [ 'eventemitter3', 'requires-port' ]
+351 info install http-proxy@1.11.3
+352 info postinstall http-proxy@1.11.3
+353 verbose unlock done using /Users/liuxuewen/.npm/_locks/http-proxy-4e39f4829923e043.lock for /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/node_modules/http-proxy
+354 verbose about to build /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy
+355 info build /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy
+356 info linkStuff grunt-connect-proxy@0.2.0
+357 silly linkStuff grunt-connect-proxy@0.2.0 has /Users/liuxuewen/github_project/HongTui/node_modules as its parent node_modules
+358 verbose linkBins grunt-connect-proxy@0.2.0
+359 verbose linkMans grunt-connect-proxy@0.2.0
+360 verbose rebuildBundles grunt-connect-proxy@0.2.0
+361 verbose rebuildBundles [ 'http-proxy', 'lodash' ]
+362 info install grunt-connect-proxy@0.2.0
+363 info postinstall grunt-connect-proxy@0.2.0
+364 verbose readDependencies loading dependencies from /Users/liuxuewen/github_project/HongTui/package.json
+365 verbose targetResolver reading package data from /Users/liuxuewen/github_project/HongTui/node_modules/grunt/package.json
+366 verbose targetResolver reading package data from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy/package.json
+367 verbose targetResolver reading package data from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-contrib-connect/package.json
+368 verbose targetResolver reading package data from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-contrib-less/package.json
+369 verbose targetResolver reading package data from /Users/liuxuewen/github_project/HongTui/node_modules/grunt-contrib-watch/package.json
+370 verbose targetResolver reading package data from /Users/liuxuewen/github_project/HongTui/node_modules/.npminstall/grunt-connect-proxy/package.json
+371 verbose targetResolver reading package data from /Users/liuxuewen/github_project/HongTui/node_modules/.bin/grunt/package.json
+372 verbose already installed skipping grunt@~0.4.1 /Users/liuxuewen/github_project/HongTui
+373 silly install resolved []
+374 verbose unlock done using /Users/liuxuewen/.npm/_locks/grunt-connect-proxy-3f2efcc4ea51ebdd.lock for /Users/liuxuewen/github_project/HongTui/node_modules/grunt-connect-proxy
+375 verbose validateInstall loading /Users/liuxuewen/github_project/HongTui/package.json for validation
+376 verbose stack Error: The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+376 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+376 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+376 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+376 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+376 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+376 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+376 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+376 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+376 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+376 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+377 verbose cwd /Users/liuxuewen/github_project/HongTui
+378 error Darwin 15.4.0
+379 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "grunt-connect-proxy" "--save-dev" "-d"
+380 error node v4.4.4
+381 error npm  v2.15.1
+382 error code EPEERINVALID
+383 error peerinvalid The package grunt@1.0.1 does not satisfy its siblings' peerDependencies requirements!
+383 error peerinvalid Peer grunt-connect-proxy@0.2.0 wants grunt@~0.4.1
+383 error peerinvalid Peer grunt-contrib-connect@1.0.2 wants grunt@>=0.4.0
+384 verbose exit [ 1, true ]
