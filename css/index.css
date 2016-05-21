@@ -11239,6 +11239,9 @@ input {
 .hongtui-title-02 .current {
   color: #ff5757;
 }
+.hongtui-title-02.mycollection {
+  background: url("../images/shadow.png") no-repeat 410px bottom;
+}
 .hongtui-title-02 .quoted-price {
   display: inline-block;
   width: 100px;
