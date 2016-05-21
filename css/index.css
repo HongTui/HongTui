@@ -10236,6 +10236,9 @@ a.btn-fill span {
 .oldcss-widthauto span.p-w395 {
   width: 525px;
 }
+input {
+  outline: none;
+}
 .hongtui-top {
   width: 1366px;
   height: 50px;
@@ -10294,11 +10297,16 @@ a.btn-fill span {
   font-size: 16px;
   color: #fc6a6a;
 }
+.hongtui-top .select-box:hover .lists {
+  display: block;
+}
 .hongtui-top .lists {
   width: 140px;
   float: right;
-  margin-right: -140px;
+  margin-right: -88px;
   margin-top: 50px;
+  display: none;
+  position: absolute;
 }
 .hongtui-top .lists .list-item {
   display: block;
@@ -10316,5 +10324,480 @@ a.btn-fill span {
 .hongtui-header {
   width: 1366px;
   height: 95px;
-  background: url("../images/header.gif");
+  background: url("../images/header.gif") no-repeat center center;
+}
+.hongtui-header > a {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  margin-right: 110px;
+  margin-top: 40px;
+}
+.hongtui-header > a:hover,
+.hongtui-header > a.current {
+  color: #000000;
+}
+.hongtui-header .home {
+  margin-left: 680px;
+}
+.hongtui-title {
+  width: 1200px;
+  margin: 60px auto 0 auto;
+  height: 80px;
+  line-height: 80px;
+  background: url("../images/headline.png") no-repeat center bottom;
+  padding-bottom: 18px;
+}
+.hongtui-title > a {
+  color: #000000;
+  font-size: 26px;
+  margin-right: 170px;
+}
+.hongtui-title .first {
+  margin-left: 230px;
+}
+.hongtui-box {
+  width: 1200px;
+  margin: 0 auto;
+}
+.hongtui-find {
+  width: 385px;
+  height: 36px;
+  border-radius: 18px;
+  border: 2px solid #cfa972;
+  margin: 30px 0 0 340px;
+  font-size: 16px;
+  color: #b3b3b3;
+  text-align: center;
+  font-family: "\5FAE\8F6F\96C5\9ED1", Verdana, Arial, Helvetica, sans-serif;
+  background: url("../images/find.png") no-repeat 410px center;
+  padding: 0 115px 0 20px;
+}
+.find {
+  font-size: 14px;
+  margin-top: 40px;
+}
+.find > div {
+  float: left;
+}
+.find .find-title {
+  color: #565656;
+  font-weight: bold;
+}
+.find .find-items {
+  margin-left: 14px;
+  position: relative;
+}
+.find .find-items .item {
+  display: block;
+  float: left;
+  padding: 0 12px;
+  background-color: #ffffff;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.find .find-items .item:hover,
+.find .find-items .item.current {
+  background-color: #fc6a6a;
+  color: #ffffff;
+}
+.find .find-items .item.any {
+  margin: 0 40px 0 15px;
+}
+.find .find-items .select-box {
+  float: left;
+  width: 112px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  margin-top: -5px;
+}
+.find .find-items .select-box .select {
+  display: block;
+  float: left;
+  color: #fc6a6a;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0px 8px 0 15px;
+}
+.find .find-items .select-box .triangle {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 30px;
+  background: url("../images/triangle-red.png") no-repeat center center;
+}
+.find .find-items .select-box .select-items {
+  clear: both;
+  position: absolute;
+  top: 25px;
+  z-index: 10;
+  display: none;
+}
+.find .find-items .select-box .select-items .select-item {
+  display: block;
+  width: 97px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f3f3f3;
+  padding-left: 15px;
+  color: #fc6a6a;
+  cursor: pointer;
+}
+.find .find-items .select-box .select-items .select-item:hover {
+  background-color: #fc6a6a;
+  color: #fff;
+}
+.find .find-items .select-box:hover {
+  background-color: #f3f3f3;
+}
+.find .find-items .select-box:hover .select-items {
+  display: block;
+}
+.find .find-more {
+  float: right;
+  cursor: pointer;
+}
+.find .find-more .find-arrow {
+  float: right;
+  display: inline-block;
+  margin: 0 10px;
+  width: 11px;
+  height: 20px;
+  background: url("../images/dropdown-hover.png") no-repeat center center;
+}
+.find .find-more:hover {
+  color: #fc6a6a;
+}
+.find .therange {
+  float: right;
+}
+.find .therange .range-from,
+.find .therange .range-to {
+  display: block;
+  float: left;
+  width: 48px;
+  height: 22px;
+  border: 1px solid #d2d2d2;
+  border-radius: 11px;
+  padding: 0 10px;
+}
+.find .therange .range-symbol {
+  display: block;
+  float: left;
+  color: #d2d2d2;
+  margin: 0 8px;
+}
+.find .therange .range-unit {
+  float: left;
+  display: block;
+  line-height: 22px;
+  margin-left: 3px;
+}
+.find .therange .range-certain {
+  float: right;
+  display: block;
+  cursor: pointer;
+  margin: 0 31px 0 18px;
+}
+.find .therange.read {
+  float: left;
+}
+.hongtui-line {
+  width: 1366px;
+  height: 35px;
+  background-color: #f3f3f3;
+  margin: 40px 0 30px auto;
+}
+.hongtui-result-box {
+  width: 1200px;
+  margin: 0 auto;
+  height: 1430px;
+}
+.hongtui-result-box .result-filter {
+  width: 1200px;
+  height: 30px;
+  border-bottom: 1px solid #fc6a6a;
+  font-size: 14px;
+  color: #565656;
+  position: relative;
+}
+.hongtui-result-box .result-filter > div {
+  float: left;
+  line-height: 30px;
+}
+.hongtui-result-box .result-filter .result-num span {
+  font-size: 18px;
+  color: #fc6a6a;
+}
+.hongtui-result-box .result-filter .checkbox {
+  width: 75px;
+  background: url("../images/checkbox.png") no-repeat left center;
+  text-align: right;
+  margin-right: 55px;
+}
+.hongtui-result-box .result-filter .checkbox.first {
+  margin-left: 485px;
+}
+.hongtui-result-box .result-filter .checkbox.checked {
+  background: url("../images/checkbox-checked.png") no-repeat left center;
+}
+.hongtui-result-box .result-filter .select-box {
+  float: left;
+  width: 123px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.hongtui-result-box .result-filter .select-box .select {
+  display: block;
+  float: left;
+  color: #000;
+  font-size: 14px;
+  margin: 0px 8px 0 15px;
+}
+.hongtui-result-box .result-filter .select-box .triangle {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 30px;
+  background: url("../images/triangle-black.png") no-repeat center center;
+}
+.hongtui-result-box .result-filter .select-box .select-items {
+  clear: both;
+  position: absolute;
+  top: 25px;
+  z-index: 10;
+  display: none;
+}
+.hongtui-result-box .result-filter .select-box .select-items .select-item {
+  display: block;
+  width: 108px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f3f3f3;
+  padding-left: 15px;
+  color: #000;
+  cursor: pointer;
+}
+.hongtui-result-box .result-filter .select-box .select-items .select-item:hover {
+  background-color: #fc6a6a;
+  color: #fff;
+}
+.hongtui-result-box .result-filter .select-box:hover {
+  background-color: #f3f3f3;
+}
+.hongtui-result-box .result-filter .select-box:hover .select-items {
+  display: block;
+}
+.hongtui-result-box .result-header {
+  float: left;
+  width: 1096px;
+  font-size: 16px;
+  color: #565656;
+  border-bottom: 3px solid #f1f1f1;
+  height: 86px;
+  margin-left: 104px;
+}
+.hongtui-result-box .result-header > div {
+  float: left;
+  margin-top: 45px;
+}
+.hongtui-result-box .result-header > div.head1 {
+  width: 186px;
+}
+.hongtui-result-box .result-header > div.head2 {
+  width: 140px;
+}
+.hongtui-result-box .result-header > div.head3 {
+  width: 140px;
+}
+.hongtui-result-box .result-header > div.head4 {
+  width: 136px;
+}
+.hongtui-result-box .result-header > div.head5 {
+  width: 136px;
+}
+.hongtui-result-box .result-header > div.head6 {
+  width: 140px;
+}
+.hongtui-result-box .result-header > div.head7 {
+  width: 186px;
+}
+.hongtui-result-box .result-content .content-left {
+  float: left;
+  width: 104px;
+  height: 143px;
+}
+.hongtui-result-box .result-content .content-left .image {
+  width: 66px;
+  height: 96px;
+  background: url("../images/picture.png") no-repeat center center;
+}
+.hongtui-result-box .result-content .content-left .webChat {
+  width: 56px;
+  height: 20px;
+  border: 1px solid #6d9f00;
+  color: #6d9f00;
+  text-align: center;
+  line-height: 20px;
+}
+.hongtui-result-box .result-content .content-right {
+  width: 1096px;
+  height: 140px;
+  float: right;
+  border-bottom: 3px solid #f1f1f1;
+}
+.hongtui-result-box .result-content .content-right .accountnum {
+  float: left;
+  font-size: 14px;
+  width: 186px;
+}
+.hongtui-result-box .result-content .content-right .accountnum .name {
+  display: block;
+  margin-top: 30px;
+  line-height: 24px;
+}
+.hongtui-result-box .result-content .content-right .accountnum .secondname {
+  display: block;
+  line-height: 24px;
+  margin-bottom: 18px;
+  color: #808080;
+}
+.hongtui-result-box .result-content .content-right .accountnum .icon-01 {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: url("../images/icon-01.png") no-repeat center center;
+  margin-right: 18px;
+}
+.hongtui-result-box .result-content .content-right .accountnum .icon-02 {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: url("../images/icon-02.png") no-repeat center center;
+  margin-right: 20px;
+}
+.hongtui-result-box .result-content .content-right .accountnum .icon-03 {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: url("../images/icon-03.png") no-repeat center center;
+}
+.hongtui-result-box .result-content .content-right .fansnum {
+  float: left;
+  width: 140px;
+  font-size: 14px;
+  color: #808080;
+  margin-top: 40px;
+}
+.hongtui-result-box .result-content .content-right .readnum {
+  float: left;
+  width: 140px;
+  font-size: 14px;
+  color: #808080;
+  margin-top: 40px;
+}
+.hongtui-result-box .result-content .content-right .firstprice,
+.hongtui-result-box .result-content .content-right .secondprice,
+.hongtui-result-box .result-content .content-right .thridprice,
+.hongtui-result-box .result-content .content-right .forthprice {
+  float: left;
+  width: 136px;
+  font-size: 14px;
+  color: #808080;
+  margin-top: 30px;
+}
+.hongtui-result-box .result-content .content-right .firstprice > div,
+.hongtui-result-box .result-content .content-right .secondprice > div,
+.hongtui-result-box .result-content .content-right .thridprice > div,
+.hongtui-result-box .result-content .content-right .forthprice > div {
+  line-height: 24px;
+}
+.hongtui-result-box .result-content .content-right .operation {
+  float: left;
+  margin-top: 30px;
+  margin-left: 5px;
+}
+.hongtui-result-box .result-content .content-right .operation .collect {
+  width: 23px;
+  height: 20px;
+  cursor: pointer;
+  background: url("../images/collect.png") no-repeat center center;
+}
+.hongtui-result-box .result-content .content-right .operation .collect:hover {
+  background: url("../images/collect-hover.png") no-repeat center center;
+}
+.hongtui-result-box .result-content .content-right .operation .price {
+  width: 20px;
+  height: 22px;
+  margin-top: 10px;
+  cursor: pointer;
+  background: url("../images/selfmedia.png") no-repeat center center;
+}
+.flip-box {
+  width: 1366px;
+  height: 110px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+}
+.flip-box .flip {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #808080;
+  padding-left: 500px;
+  padding-top: 40px;
+}
+.flip-box .flip > span {
+  margin-right: 15px;
+}
+.flip-box .flip .totalpage {
+  margin: 0 5px;
+}
+.flip-box .flip .previous,
+.flip-box .flip .next {
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  cursor: pointer;
+}
+.flip-box .flip .previous.disabled,
+.flip-box .flip .next.disabled {
+  color: #c9c9c9;
+  border-color: #d9d9d9;
+}
+.flip-box .flip .homepage,
+.flip-box .flip .lastpage {
+  display: inline-block;
+  width: 48px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+  cursor: pointer;
+}
+.flip-box .flip .homepage.disabled,
+.flip-box .flip .lastpage.disabled {
+  color: #c9c9c9;
+  border-color: #d9d9d9;
+}
+.footer {
+  width: 1200px;
+  height: 175px;
+  margin: 0 auto;
+  margin-top: 78px;
+  border-top: 1px solid #cccccc;
+  font-size: 13px;
+  color: #9b9b9b;
+  padding-top: 48px;
+}
+.footer > div {
+  text-align: center;
+  line-height: 24px;
 }
