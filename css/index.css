@@ -10260,6 +10260,7 @@ a.btn-fill span {
   height: 60px;
   line-height: 60px;
   text-align: center;
+  letter-spacing: 2px;
 }
 .about .about-en {
   font-size: 14px;
@@ -10621,11 +10622,37 @@ input:focus {
   color: #ff5858;
   font-size: 14px;
 }
+.myaccount {
+  width: 1200px;
+  margin: 0 auto;
+}
+.myaccount-nav li {
+  float: left;
+  width: 400px;
+  height: 84px;
+  padding-bottom: 20px;
+}
+.myaccount-nav li a {
+  display: block;
+  font-size: 24px;
+  color: #26212a;
+  line-height: 84px;
+  text-align: center;
+}
+.myaccount-nav li.current {
+  background: url('../images/account-linear.png') no-repeat center bottom;
+}
+.myaccount-nav li.current a {
+  color: #fc6a6a;
+}
+.myaccount-info li {
+  float: left;
+}
 input {
   outline: none;
 }
 .hongtui-top {
-  width: 1366px;
+  width: 100%;
   height: 50px;
   background-color: #26212a;
   color: #fff;
@@ -10707,7 +10734,7 @@ input {
   color: #fc6a6a;
 }
 .hongtui-header {
-  width: 1366px;
+  width: 100%;
   height: 95px;
   background: url("../images/header.gif") no-repeat center center;
 }
@@ -10891,7 +10918,7 @@ input {
   float: left;
 }
 .hongtui-line {
-  width: 1366px;
+  width: 100%;
   height: 35px;
   background-color: #f3f3f3;
   margin: 40px 0 30px auto;
@@ -11123,7 +11150,7 @@ input {
   background: url("../images/selfmedia.png") no-repeat center center;
 }
 .flip-box {
-  width: 1366px;
+  width: 100%;
   height: 110px;
   margin: 0 auto;
   background-color: #f1f1f1;
