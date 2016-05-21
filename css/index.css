@@ -41,13 +41,13 @@
   font-size: 30px;
 }
 .link-basecolor {
-  color: #333333;
+  color: #333;
 }
 .link-basecolor:hover {
   color: #53a0e3;
 }
 .link-lighter-color {
-  color: #999999;
+  color: #999;
 }
 .link-lighter-color:hover {
   color: #53a0e3;
@@ -89,7 +89,7 @@
   color: #ffe296;
 }
 .global-gray-light {
-  color: #999999;
+  color: #999;
 }
 .vertical-high-80 {
   height: 80px;
@@ -1822,7 +1822,6 @@ input::-ms-clear {
   position: absolute;
   /*background-color: #0cc;*/
   /*#6EBA2C*/
-
   background-color: #6EBA2C;
   border-radius: 50%;
 }
@@ -1842,7 +1841,6 @@ input::-ms-clear {
   top: 0px;
   left: 0px;
   /*background-color: #00aacc;*/
-
   background-color: #E3E3E3;
   border-radius: 50%;
   transform: rote(30deg);
@@ -2422,9 +2420,7 @@ span.span-product {
   left: 0px;
   top: 15px;
   /**/
-
   /**/
-
 }
 .case-xs .cast-crile .circle .pie_left,
 .case-xs .cast-crile .circle .pie_right {
@@ -2436,7 +2432,6 @@ span.span-product {
   width: 50px;
   height: 50px;
   /*background-color: #00aacc;*/
-
   background-color: #E3E3E3;
 }
 .case-xs .cast-crile .circle .pie_left,
@@ -3575,7 +3570,6 @@ span.ico-failure {
   padding-top: 10px;
   padding-bottom: 8px;
   /*chrome和safari hank*/
-
 }
 .fild-group.fild-group-radio {
   padding-top: 3px;
@@ -7462,7 +7456,6 @@ a.btn-fill span {
   right: 4px;
   top: 6px;
   /**/
-
 }
 .progress-bar .circle .pie_left,
 .progress-bar .circle .pie_right {
@@ -10235,6 +10228,176 @@ a.btn-fill span {
 }
 .oldcss-widthauto span.p-w395 {
   width: 525px;
+}
+.about .about-top {
+  background: url('../images/about-us.jpg') no-repeat;
+  background-position: center top;
+  width: 100%;
+  height: 635px;
+}
+.about .about-who {
+  margin-top: 66px;
+}
+.about .about-who .about-who-con {
+  width: 730px;
+  font-size: 14px;
+  line-height: 32px;
+  color: #767676;
+  margin: 0 auto;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.about .about-title {
+  font-size: 42px;
+  color: #353535;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.about .about-en {
+  font-size: 14px;
+  color: #353535;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+.about .about-line {
+  display: block;
+  margin: 0 auto;
+  width: 25px;
+  height: 6px;
+  background-color: #a0a0a0;
+  margin-top: 14px;
+  margin-bottom: 39px;
+}
+.about .about-what {
+  margin-top: 66px;
+}
+.about .about-what .about-what-con {
+  width: 982px;
+  height: 203px;
+  margin: 0 auto;
+  background: url('../images/about-us-send.png') no-repeat;
+  background-position: center top;
+}
+.about .about-contact {
+  margin-top: 66px;
+}
+.about .about-contact .about-contact-con {
+  height: 484px;
+  width: 100%;
+}
+input:focus {
+  outline: none !important;
+}
+.login {
+  background: url('../images/big-bg.jpg') no-repeat;
+  background-position: center top;
+  /*background-size: contain;*/
+  width: 100%;
+  height: 636px;
+}
+.login .login-nav {
+  float: right;
+  margin-right: 200px;
+  margin-top: 32px;
+}
+.login .login-nav li {
+  float: left;
+  width: 160px;
+}
+.login .login-nav li a {
+  font-size: 16px;
+  height: 32px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #fff;
+}
+.login .login-in {
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 6px;
+  filter: alpha(opacity=80);
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 114px;
+  margin-left: -200px;
+}
+.login .login-in h3 {
+  color: #ff5757;
+  font-size: 30px;
+  margin-top: 40px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+}
+.login .login-in .login-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url('../images/close.png') no-repeat;
+  width: 9px;
+  height: 9px;
+  /*z-index: 1px;*/
+  cursor: pointer;
+}
+.login .login-in .login-error {
+  color: #ff2121;
+  font-size: 12px;
+  padding-top: 12px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.login .login-in .login-input {
+  width: 228px;
+  margin: 0 auto;
+}
+.login .login-in .login-input li {
+  margin: 4px 0;
+}
+.login .login-in .login-input li input {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #f7a1a0;
+  width: 228px;
+}
+.login .login-in .login-forget {
+  display: block;
+  margin: 28px 0 42px 0;
+  color: #8d8c8c;
+  font-size: 12px;
+  text-align: center;
+}
+.login .login-in .login-submit {
+  display: block;
+  width: 228px;
+  height: 45px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: #ff5757;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+}
+.footer {
+  margin-top: 62px;
+  text-align: center;
+}
+.footer p {
+  height: 22px;
+  line-height: 22px;
+  color: #9b9b9b;
+  font-size: 12px;
+}
+.footer p a {
+  text-decoration: underline;
 }
 .hongtui-top {
   width: 1366px;
