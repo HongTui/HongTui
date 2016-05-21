@@ -10919,7 +10919,6 @@ input {
 .hongtui-result-box {
   width: 1200px;
   margin: 0 auto;
-  /*height: 1430px;*/
 }
 .hongtui-result-box .result-filter {
   width: 1200px;
@@ -11132,8 +11131,15 @@ input {
   cursor: pointer;
   background: url("../images/collect.png") no-repeat center center;
 }
-.hongtui-result-box .result-content .content-right .operation .collect:hover {
+.hongtui-result-box .result-content .content-right .operation .collect:hover,
+.hongtui-result-box .result-content .content-right .operation .collect.selected {
   background: url("../images/collect-hover.png") no-repeat center center;
+}
+.hongtui-result-box .result-content .content-right .operation .delete {
+  width: 23px;
+  height: 20px;
+  cursor: pointer;
+  background: url("../images/delete.png") no-repeat center center;
 }
 .hongtui-result-box .result-content .content-right .operation .price {
   width: 20px;
@@ -11147,6 +11153,7 @@ input {
   height: 110px;
   margin: 0 auto;
   background-color: #f1f1f1;
+  clear: both;
 }
 .flip-box .flip {
   width: 1200px;
@@ -11205,4 +11212,85 @@ input {
 .footer > div {
   text-align: center;
   line-height: 24px;
+}
+.hongtui-title-02 {
+  width: 1200px;
+  margin: 60px auto 0 auto;
+  height: 80px;
+  line-height: 80px;
+  background: url("../images/shadow.png") no-repeat 120px bottom;
+  padding-bottom: 18px;
+}
+.hongtui-title-02 > a {
+  color: #000000;
+  font-size: 26px;
+  margin-right: 170px;
+}
+.hongtui-title-02 .first {
+  margin-left: 230px;
+}
+.hongtui-title-02 .current {
+  color: #ff5757;
+}
+.hongtui-title-02.mycollection {
+  background: url("../images/shadow.png") no-repeat 410px bottom;
+}
+.hongtui-title-02 .quoted-price {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ff5757;
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.hongtui-result-box .checkbox2-box {
+  float: left;
+  width: 104px;
+  height: 142px;
+}
+.hongtui-result-box .checkbox2-box .checkbox2 {
+  width: 15px;
+  margin: 46px 10px 0 39px;
+  background: url("../images/checkbox2.png") no-repeat left center;
+  text-align: right;
+  color: #6a6a6a;
+  font-size: 16px;
+  cursor: pointer;
+}
+.hongtui-result-box .no-margin-left {
+  margin-left: 0;
+}
+.media-num {
+  clear: both;
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 22px;
+  color: #373737;
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+.media-num > div {
+  display: inline-block;
+  margin-left: 715px;
+  margin-right: 180px;
+}
+.media-num .num {
+  font-size: 28px;
+  color: #fc6a6a;
+}
+.media-num .quoted-price {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ff5757;
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
 }
