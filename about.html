@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于我们－红推</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="about">
+		<div class="about-top"></div>
+		<div class="about-who">
+			<h3 class="about-title">我们是谁</h3>
+			<p class="about-en">WHO WE ARE</p>
+			<p class="about-line"></p>
+			<p class="about-who-con">
+				红推是一家社会化媒体营销平台，公司总部位于广州，在北京、上海设立办事处。专注于微信、微博、朋友圈广告的效果投放，通过独家社会化大数据深入挖掘账号价值，无缝对接有米反作弊系统，精准触达目标用户，确保您的推广效果。目前，合作超过20万微博、微信资源，覆盖超过10亿用户，与超过200个广告主保持着深入合作。
+			</p>
+		</div>
+		<div class="about-what">
+			<h3 class="about-title">我们提供</h3>
+			<p class="about-en">WHAT WE OFFER</p>
+			<p class="about-line"></p>
+			<p class="about-what-con"></p>
+		</div>
+		<div class="about-contact">
+			<h3 class="about-title">联系我们</h3>
+			<p class="about-en">CONTACT US</p>
+			<p class="about-line"></p>
+			<p class="about-contact-con" id='about-map'></p>
+		</div>
+	</div>
+	<div class="footer">
+		<p>客服电话：400-500-3456      联系地址：北京市朝阳区亮马桥京信大厦</p>
+		<p><a href="#">关于我们</a> | Copyright ©. All Rights Reserved. 京ICP证080047号 京公网安备11000002000006号</p>
+	</div>
+</body>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8388aa95986d402cd7194a3feb40d33c"></script>
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("about-map");
+	var point = new BMap.Point(116.468274,39.95999);
+	var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);              // 将标注添加到地图中
+	map.centerAndZoom(point, 15);
+	var opts = {
+	  width : 160,     // 信息窗口宽度
+	  height: 50,     // 信息窗口高度
+	  title : "红推" , // 信息窗口标题
+	  enableMessage:true,//设置允许信息窗发送短息
+	  message:"北京市朝阳区亮马桥京信大厦"
+	}
+	var infoWindow = new BMap.InfoWindow("地址：北京市朝阳区亮马桥京信大厦<br />电话：400-500-3456", opts);  // 创建信息窗口对象 
+	map.openInfoWindow(infoWindow,point); //开启信息窗口
+	marker.addEventListener("click", function(){          
+		map.openInfoWindow(infoWindow,point); //开启信息窗口
+	});
+</script>
+</html>
