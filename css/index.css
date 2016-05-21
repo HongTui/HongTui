@@ -10638,6 +10638,9 @@ input:focus {
 .myaccount-info li {
   float: left;
 }
+.myaccount-info li > div {
+  /*height: 8*/
+}
 input {
   outline: none;
 }
@@ -10916,7 +10919,7 @@ input {
 .hongtui-result-box {
   width: 1200px;
   margin: 0 auto;
-  height: 1430px;
+  /*height: 1430px;*/
 }
 .hongtui-result-box .result-filter {
   width: 1200px;
