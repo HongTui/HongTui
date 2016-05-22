@@ -1,0 +1,29 @@
+{
+	"TotalCount": 1202,
+	"Page": 3,
+	"PageSize": 10,
+	"Items": [
+		{
+			"Id": 12,
+			"Wxname": "Wxname",
+			"Avatar": "/images/picture.png",
+			"AuthInfo": "微信认证",
+			"Qrcode": "Qrcode",
+			"Category": "Category",
+			"Intruduct": "Intruduct",
+			"FollowCount": 1000,
+			"MGTopSPrice": 123,
+			"MGTopHPrice": 222,
+			"MGTopRead": 333,
+			"MGSecondSPrice": 444,
+			"MGSecondHPrice": 555,
+			"MGSecondRead": 666,
+			"MGOtherSPrice": 777,
+			"MGOtherHPrice": 888,
+			"MGOtherRead": 999,
+			"SGSPrice": 1000,
+			"SGHPrice": 1100,
+			"SGRead": 1200
+		}
+	]
+}

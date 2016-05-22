@@ -10,6 +10,11 @@
 			background-color: #fff;
 		}
 	</style>
+	<script src="./script/jquery.js"></script>
+	<script src="./script/common.js"></script>
+	<script src="./script/connect.js"></script>
+	<script src="./script/template.js"></script>
+	<script src="./script/selfMedia.js"></script>
 </head>
 <body>
 	<div class="hongtui-top">
@@ -45,7 +50,7 @@
 	<!-- 筛选 start -->
 	<div class="hongtui-box find">
 		<div class="find-title">常见分类：</div>
-		<div class="find-items">
+		<div class="find-items" id＝"search_category">
 			<span class="item any current">不限</span>
 			<span class="item">新闻</span>
 			<span class="item">资讯</span>
@@ -64,33 +69,33 @@
 	</div>
 	<div class="hongtui-box find">
 		<div class="find-title">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</div>
-		<div class="find-items">
+		<div class="find-items" id="PriceItem">
 			<div class="select-box">
-				<span class="select">头条硬广</span>
+				<span class="select" id="PriceItem_type" data-type="MGTopHPrice">头条硬广</span>
 				<span class="triangle"></span>
 				<div class="select-items">
-					<span class="select-item">头条硬广</span>
-					<span class="select-item">头条软广</span>
-					<span class="select-item">次条硬广</span>
-					<span class="select-item">次条软广</span>
-					<span class="select-item">3~n条硬广</span>
-					<span class="select-item">3~n条软广</span>
-					<span class="select-item">单图文硬广</span>
-					<span class="select-item">单图文软广</span>
+					<span class="select-item" data-type="MGTopHPrice">头条硬广</span>
+					<span class="select-item" data-type="MGTopSPrice">头条软广</span>
+					<span class="select-item" data-type="MGSecondHPrice">次条硬广</span>
+					<span class="select-item" data-type="MGSecondSPrice">次条软广</span>
+					<span class="select-item" data-type="MGOtherHPrice">3~n条硬广</span>
+					<span class="select-item" data-type="MGOtherSPrice">3~n条软广</span>
+					<span class="select-item" data-type="SGHPrice">单图文硬广</span>
+					<span class="select-item" data-type="SGSPrice">单图文软广</span>
 				</div>
 			</div>
-			<span class="item">500元以下</span>
-			<span class="item">500-1000元</span>
-			<span class="item">1000-2000元</span>
-			<span class="item">2000-4000元</span>
-			<span class="item">4000-6000元</span>
-			<span class="item">6000-10000元</span>
-			<span class="item">10000元以上</span>
+			<span class="item" data-min="0" data-max="500">500元以下</span>
+			<span class="item" data-min="500" data-max="1000">500-1000元</span>
+			<span class="item" data-min="1000" data-max="2000">1000-2000元</span>
+			<span class="item" data-min="2000" data-max="4000">2000-4000元</span>
+			<span class="item" data-min="4000" data-max="6000">4000-6000元</span>
+			<span class="item" data-min="6000" data-max="10000">6000-10000元</span>
+			<span class="item" data-min="10000" data-max="10000000">10000元以上</span>
 		</div>
 		<div class="therange">
-			<input class="range-from"/>
+			<input class="range-from" data-type="number"/>
 			<span class="range-symbol">-</span>
-			<input class="range-to"/>
+			<input class="range-to" data-type="number"/>
 			<span class="range-unit">元</span>
 			<span class="range-certain">确定</span>
 		</div>
@@ -98,20 +103,20 @@
 	</div>
 	<div class="hongtui-box find">
 		<div class="find-title">粉&nbsp;&nbsp;丝&nbsp;&nbsp;量：</div>
-		<div class="find-items">
-			<span class="item any current">不限</span>
-			<span class="item">1-5万</span>
-			<span class="item">5-10万</span>
-			<span class="item">10-20万</span>
-			<span class="item">20-40万</span>
-			<span class="item">40-80万</span>
-			<span class="item">80-120万</span>
-			<span class="item">200万以上</span>
+		<div class="find-items" id="FunsItem">
+			<span class="item any current" data-min="0" data-max="100000000">不限</span>
+			<span class="item" data-min="10000" data-max="50000">1-5万</span>
+			<span class="item" data-min="50000" data-max="100000">5-10万</span>
+			<span class="item" data-min="100000" data-max="200000">10-20万</span>
+			<span class="item" data-min="200000" data-max="400000">20-40万</span>
+			<span class="item" data-min="400000" data-max="800000">40-80万</span>
+			<span class="item" data-min="800000" data-max="1200000">80-120万</span>
+			<span class="item" data-min="2000000" data-max="1000000000">200万以上</span>
 		</div>
 		<div class="therange">
-			<input class="range-from"/>
+			<input class="range-from" data-type="number"/>
 			<span class="range-symbol">-</span>
-			<input class="range-to"/>
+			<input class="range-to" data-type="number"/>
 			<span class="range-unit">万</span>
 			<span class="range-certain">确定</span>
 		</div>
@@ -121,20 +126,20 @@
 		<div class="find-title">阅&nbsp;&nbsp;读&nbsp;&nbsp;量：</div>
 		<div class="find-items">
 			<div class="select-box">
-				<span class="select">阅读量</span>
+				<span class="select" data-type="MGTopRead">头条</span>
 				<span class="triangle"></span>
-				<div class="select-items">
-					<span class="select-item">头条</span>
-					<span class="select-item">次条</span>
-					<span class="select-item">3~n条</span>
-					<span class="select-item">单图文</span>
+				<div class="select-items" id="readItem_type">
+					<span class="select-item" data-type="MGTopRead">头条</span>
+					<span class="select-item" data-type="MGSecondRead">次条</span>
+					<span class="select-item" data-type="MGOtherRead">3~n条</span>
+					<span class="select-item" data-type="SGRead">单图文</span>
 				</div>
 			</div>
 		</div>
-		<div class="therange read">
-			<input class="range-from"/>
+		<div class="therange read" id="readItem">
+			<input class="range-from" data-type="number"/>
 			<span class="range-symbol">-</span>
-			<input class="range-to"/>
+			<input class="range-to" data-type="number"/>
 			<span class="range-unit">万</span>
 			<span class="range-certain">确定</span>
 		</div>
@@ -174,7 +179,10 @@
 			<div class="head7">单图文报价</div>
 			<div class="head8">操作</div>
 		</div>
-		<div class="result-content cf">
+		<div id="result-con">
+			
+		</div>
+		<!-- <div class="result-content cf">
 			<div class="content-left">
 				<div class="image"></div>
 				<div class="webChat">微信认证</div>
@@ -284,7 +292,7 @@
 					<div class="price"></div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<!-- 查询结果 end -->
 	<!-- 翻页 start-->
@@ -306,4 +314,45 @@
 	</div>
 	<!-- 页脚end -->
 </body>
+<script type="template/html" id="temp_list">
+{{each Items as item}}
+	<div class="result-content cf">
+		<div class="content-left">
+			<div class="image" style="background-image:url('{{item.Avatar}}')"></div>
+			<div class="webChat">{{item.AuthInfo}}</div>
+		</div>
+		<div class="content-right">
+			<div class="accountnum">
+				<span class="name">{{item.Wxname}}</span>
+				<span class="secondname">{{item.Wxid}}</span>
+				<span class="icon-01"></span>
+				<span class="icon-02"></span>
+				<span class="icon-03"></span>
+			</div>
+			<div class="fansnum">{{item.FollowCount}}</div>
+			<div class="readnum">{{item.MGTopRead}}</div>
+			<div class="firstprice">
+				<div class="soft">软广：<span>{{item.MGTopSPrice}}</span></div>
+				<div class="hard">硬广：<span>{{item.MGTopHPrice}}</span></div>
+			</div>
+			<div class="secondprice">
+				<div class="soft">软广：<span>{{item.MGSecondSPrice}}</span></div>
+				<div class="hard">硬广：<span>{{item.MGSecondHPrice}}</span></div>
+			</div>
+			<div class="thridprice">
+				<div class="soft">软广：<span>{{item.MGOtherSPrice}}</span></div>
+				<div class="hard">硬广：<span>{{item.MGOtherHPrice}}</span></div>
+			</div>
+			<div class="forthprice" style="width:185px;">
+				<div class="soft">软广：<span>{{item.SGSPrice}}</span></div>
+				<div class="hard">硬广：<span>{{item.SGHPrice}}</span></div>
+			</div>
+			<div class="operation">
+				<div class="collect" data-id="{{item.Id}}"></div>
+				<div class="price"></div>
+			</div>
+		</div>
+	</div>
+{{/each}}
+</script>
 </html>
