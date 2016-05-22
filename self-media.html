@@ -50,7 +50,7 @@
 	<!-- 筛选 start -->
 	<div class="hongtui-box find">
 		<div class="find-title">常见分类：</div>
-		<div class="find-items" id＝"search_category">
+		<div class="find-items" id="search_category">
 			<span class="item any current">不限</span>
 			<span class="item">新闻</span>
 			<span class="item">资讯</span>
@@ -66,6 +66,22 @@
 		</div>
 		<div class="find-more">更多<span class="find-arrow"></span></div>
 		<br/>
+		<!-- 常见分类 更多 start-->
+		<div class="find-items more-other">
+			<span class="item">读书</span>
+			<span class="item">音乐</span>
+			<span class="item">搞笑</span>
+			<span class="item">养生</span>
+<!-- 			<span class="item">旅游</span>
+			<span class="item">科技数码</span>
+			<span class="item">互联网</span>
+			<span class="item">美容</span>
+			<span class="item">汽车</span>
+			<span class="item">家居</span>
+			<span class="item">财经</span> -->
+			<br/>
+		</div>
+		<!-- 常见分类 更多 end-->
 	</div>
 	<div class="hongtui-box find">
 		<div class="find-title">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</div>
@@ -323,6 +339,9 @@
 				<span class="icon-02"></span>
 				<span class="icon-03"></span>
 			</div>
+			<div class="webchat-codes" style="display: none;">
+		        <img src="{{item.Qrcode}}" width="120" height="120">
+		    </div>
 			<div class="fansnum">{{fmtMoney(item.FollowCount, 0, true)}}</div>
 			<div class="readnum">{{fmtMoney(item.MGTopRead, 0, true)}}</div>
 			<div class="firstprice">

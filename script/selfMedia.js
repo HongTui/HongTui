@@ -12,7 +12,7 @@ $(function(){
 		},
 		_envir: 'local'
 	};
-	var $category = $("#search_category");
+	var $category = $("#search_category,#search_category_nore");
 	var $priceItem = $("#PriceItem");
 	var $priceItem_type = $("#PriceItem_type");
 	var $funs = $('#FunsItem');
@@ -85,6 +85,7 @@ $(function(){
 		if($(this).hasClass('current')) return;
 
 		$(this).siblings().removeClass('current');
+		$(this).parents(".find-items").siblings(".find-items").find(".item").removeClass('current');
 		$(this).addClass('current');
 	});
 
@@ -121,6 +122,21 @@ $(function(){
 			}
 		};
 		Util.requestAjaxFn(ajaxParams);
+	})
+	//hover显示二维码图片
+	$("#result-con").on('mouseenter','.icon-02',function(){
+		$("#result-con .webchat-codes").show();
+	}).on('mouseleave','.icon-02',function(){
+		$("#result-con .webchat-codes").hide();
+	})
+	//常见分类 更多点击事件
+	$(".hongtui-box.find").on('click','.find-more',function(){
+		$(".find-items.more-other").slideToggle();
+		if($(".hongtui-box.find .find-more").html() == '更多<span class="find-arrow"></span>'){
+			$(".hongtui-box.find .find-more").html('收起<span class="find-arrow"></span>')
+		}else{
+			$(".hongtui-box.find .find-more").html('更多<span class="find-arrow"></span>')
+		}
 	})
 });
 
