@@ -4,13 +4,15 @@ var config_ajax = {
 		'login': './script/json/login.json',
 		'userInfo': './script/json/userInfo.json',
 		'getMedia': './script/json/selfMedia.json',
-		'operFav': './script/json/operFav.json'
+		'operFav': './script/json/operFav.json',
+		"getCart": './script/json/getCart.json'
 	},
 	server: {
 		'type': 'POST',
 		'login': '/Token',
 		'userInfo': '/Api/Account/UserInfo',
 		'getMedia': '/Api/Media',
-		'operFav': '/Api/Favo'
+		'operFav': '/Api/Favo',
+		'getCart': '/Api/Cart'
 	}
 };

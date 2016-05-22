@@ -10,6 +10,11 @@
 			background-color: #fff;
 		}
 	</style>
+	<script src="./script/jquery.js"></script>
+	<script src="./script/common.js"></script>
+	<script src="./script/connect.js"></script>
+	<script src="./script/template.js"></script>
+	<script src="./script/per_center.js"></script>
 </head>
 <body>
 	<div class="hongtui-top">
@@ -53,8 +58,10 @@
 			<div class="head7" style="width:145px;">单图文报价</div>
 			<div class="head8">操作</div>
 		</div>
-		<div class="result-content">
-			<!-- checked 选中状态样式 -->
+		<div id="result-con">
+			
+		</div>
+		<!-- <div class="result-content">
 			<div class="checkbox2-box">
 				<div class="checkbox2 checked">&nbsp;</div>
 			</div>
@@ -89,109 +96,21 @@
 					<div class="hard">硬广：<span>123.00</span></div>
 				</div>
 				<div class="operation">
-					<!-- selected 选中状态-->
 					<div class="delete"></div>
-					<!-- <div class="price"></div> -->
 				</div>
 			</div>
-		</div>
-		<div class="result-content">
-			<div class="checkbox2-box">
-				<div class="checkbox2">&nbsp;</div>
-			</div>
-			<div class="content-right">
-				<div class="content-left">
-					<div class="image"></div>
-					<div class="webChat">微信认证</div>
-				</div>
-				<div class="accountnum" style="width:160px;">
-					<span class="name">每天学点穿衣打扮</span>
-					<span class="secondname">ichuanyidaban</span>
-					<span class="icon-01"></span>
-					<span class="icon-02"></span>
-					<span class="icon-03"></span>
-				</div>
-				<div class="fansnum" style="width:120px;">810,000</div>
-				<div class="readnum" style="width:120px;">810,000</div>
-				<div class="firstprice">
-					<div class="soft">软广：<span>123.00</span></div>
-					<div class="hard">硬广：<span>123.00</span></div>
-				</div>
-				<div class="secondprice">
-					<div class="soft">软广：<span>123.00</span></div>
-					<div class="hard">硬广：<span>123.00</span></div>
-				</div>
-				<div class="thridprice">
-					<div class="soft">软广：<span>123.00</span></div>
-					<div class="hard">硬广：<span>123.00</span></div>
-				</div>
-				<div class="forthprice" style="width:145px;">
-					<div class="soft">软广：<span>123.00</span></div>
-					<div class="hard">硬广：<span>123.00</span></div>
-				</div>
-				<div class="operation">
-					<div class="delete"></div>
-					<!-- <div class="price"></div> -->
-				</div>
-			</div>
-		</div>
-		<div class="result-content">
-			<div class="checkbox2-box">
-				<div class="checkbox2">&nbsp;</div>
-			</div>
-			<div class="content-right">
-				<div class="content-left">
-					<div class="image"></div>
-					<div class="webChat">微信认证</div>
-				</div>
-				<div class="accountnum" style="width:160px;">
-					<span class="name">每天学点穿衣打扮</span>
-					<span class="secondname">ichuanyidaban</span>
-					<span class="icon-01"></span>
-					<span class="icon-02"></span>
-					<span class="icon-03"></span>
-				</div>
-				<div class="fansnum" style="width:120px;">810,000</div>
-				<div class="readnum" style="width:120px;">810,000</div>
-				<div class="firstprice">
-					<div class="soft">软广：<span>123.00</span></div>
-					<div class="hard">硬广：<span>123.00</span></div>
-				</div>
-				<div class="secondprice">
-					<div class="soft">软广：<span>123.00</span></div>
-					<div class="hard">硬广：<span>123.00</span></div>
-				</div>
-				<div class="thridprice">
-					<div class="soft">软广：<span>123.00</span></div>
-					<div class="hard">硬广：<span>123.00</span></div>
-				</div>
-				<div class="forthprice" style="width:145px;">
-					<div class="soft">软广：<span>123.00</span></div>
-					<div class="hard">硬广：<span>123.00</span></div>
-				</div>
-				<div class="operation">
-					<div class="delete"></div>
-					<!-- <div class="price"></div> -->
-				</div>
-			</div>
-		</div>
+		</div> -->
 	</div>
 	<!-- 正文 end-->
 	<!-- 已选择的媒体数量 start-->
 	<div class="media-num">
-		<div>已选择： <span class="num">5</span> 家媒体</div>
+		<div>已选择： <span class="num" id="choise_num">0</span> 家媒体</div>
 		<span class="quoted-price">立即报价</span>
 	</div>
 	<!-- 已选择的媒体数量 end -->
 	<!-- 翻页 start-->
 	<div class="flip-box">
-		<div class="flip">
-			<span>每页显示 10 条内容&nbsp;&nbsp;&nbsp;&nbsp;共<span clsss="totalpage"> 13140 </span>页</span>
-			<span class="homepage disabled">首页</span>
-			<span class="previous disabled">上一页</span>
-			<span class="page">1/13140</span>
-			<span class="next">下一页</span>
-			<span class="lastpage">末页</span>
+		<div class="flip" id="page_flip">
 		</div>
 	</div>
 	<!-- 翻页 end -->
@@ -202,4 +121,58 @@
 	</div>
 	<!-- 页脚end -->
 </body>
+<script type="template/html" id="temp_list">
+{{each Items as item}}
+	<div class="result-content cf">
+		<!-- checked 选中状态样式 -->
+		<div class="checkbox2-box">
+			<div class="checkbox2">&nbsp;</div>
+		</div>
+		<div class="content-right">
+			<div class="content-left">
+				<div class="image" style="background-image:url('{{item.Avatar}}')"></div>
+				<div class="webChat">{{item.AuthInfo}}</div>
+			</div>
+			<div class="accountnum" style="width:160px;">
+				<span class="name">{{item.Wxname}}</span>
+				<span class="secondname">{{item.Wxid}}</span>
+				<span class="icon-01"></span>
+				<span class="icon-02"></span>
+				<span class="icon-03"></span>
+			</div>
+			<div class="fansnum" style="width:120px;">{{fmtMoney(item.FollowCount, 0, true)}}</div>
+			<div class="readnum" style="width:120px;">{{fmtMoney(item.MGTopRead, 0, true)}}</div>
+			<div class="firstprice">
+				<div class="soft">软广：<span>{{fmtMoney(item.MGTopSPrice, 0, true)}}</span></div>
+				<div class="hard">硬广：<span>{{fmtMoney(item.MGTopHPrice, 0, true)}}</span></div>
+			</div>
+			<div class="secondprice">
+				<div class="soft">软广：<span>{{fmtMoney(item.MGSecondSPrice, 0, true)}}</span></div>
+				<div class="hard">硬广：<span>{{fmtMoney(item.MGSecondHPrice, 0, true)}}</span></div>
+			</div>
+			<div class="thridprice">
+				<div class="soft">软广：<span>{{fmtMoney(item.MGOtherSPrice, 0, true)}}</span></div>
+				<div class="hard">硬广：<span>{{fmtMoney(item.MGOtherHPrice, 0, true)}}</span></div>
+			</div>
+			<div class="forthprice" style="width:145px;">
+				<div class="soft">软广：<span>{{fmtMoney(item.SGSPrice, 0, true)}}</span></div>
+				<div class="hard">硬广：<span>{{fmtMoney(item.SGHPrice, 0, true)}}</span></div>
+			</div>
+			<div class="operation">
+				<!-- selected 选中状态-->
+				<div class="delete" data-id="{{item.Id}}"></div>
+				<!-- <div class="price"></div> -->
+			</div>
+		</div>
+	</div>
+{{/each}}
+</script>
+<script type="template/html" id="temp_flip">
+	<span>每页显示 {{PageSize}} 条内容&nbsp;&nbsp;&nbsp;&nbsp;共<span clsss="totalpage"> {{TotalPage}} </span>页</span>
+	<span class="homepage {{if Page == 0}}disabled{{/if}}">首页</span>
+	<span class="previous {{if Page == 0}}disabled{{/if}}">上一页</span>
+	<span class="page">{{Page + 1}}/{{TotalCount}}</span>
+	<span class="next {{if Page == TotalPage}}disabled{{/if}}">下一页</span>
+	<span class="lastpage {{if Page == TotalPage}}disabled{{/if}}">末页</span>
+</script>
 </html>
