@@ -11340,3 +11340,52 @@ input {
   font-size: 16px;
   cursor: pointer;
 }
+.pop-ups {
+  width: 482px;
+  height: 322px;
+  background: url("../images/popups.png") no-repeat center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+.pop-ups .pop-title {
+  font-size: 20px;
+  color: #918e8e;
+  margin: 0 0 0 200px;
+}
+.pop-ups .pop-text {
+  font-size: 16px;
+  color: #373737;
+  margin: 20px 0 0 0px;
+  line-height: 30px;
+  text-align: center;
+}
+.pop-ups .cancle {
+  display: inline-block;
+  width: 160px;
+  height: 64px;
+  line-height: 64px;
+  font-size: 16px;
+  color: #585858;
+  margin: 22px 0 0 85px;
+  text-align: center;
+  cursor: pointer;
+}
+.pop-ups .certain {
+  display: inline-block;
+  width: 160px;
+  height: 64px;
+  line-height: 64px;
+  font-size: 16px;
+  color: #ff3333;
+  text-align: center;
+  cursor: pointer;
+}
+.pop-ups .close {
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: 52px 0 0 380px;
+  cursor: pointer;
+}

@@ -120,13 +120,21 @@
 		<div class="secondline">关于我们 | Copyright ©. All Rights Reserved. 京ICP证080047号 京公网安备11000002000006号</div>
 	</div>
 	<!-- 页脚end -->
+	<!-- 弹窗 start-->
+	<div class="pop-ups" style="display:none">
+		<span class="close"></span>
+		<div class="pop-title">确认推广</div>
+		<div class="pop-text">随后会有推广经理联系您<br/>为您安排接下来的事务</div>
+		<span class="cancle">取消</span><span class="certain">确认</span>
+	</div>
+	<!-- 弹窗 end -->
 </body>
 <script type="template/html" id="temp_list">
 {{each Items as item}}
 	<div class="result-content cf">
 		<!-- checked 选中状态样式 -->
 		<div class="checkbox2-box">
-			<div class="checkbox2">&nbsp;</div>
+			<div class="checkbox2" data-id="{{item.Id}}">&nbsp;</div>
 		</div>
 		<div class="content-right">
 			<div class="content-left">

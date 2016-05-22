@@ -99,6 +99,38 @@ $(function(){
 			$allCheck.removeClass('checked');
 		}
 	}
+	//立即报价点击事件
+	$(".quoted-price").on("click",function(){
+		var arrId = [];
+		$(".result-content .checkbox2").each(function(){
+			var _this = $(this);
+			if(_this.hasClass("checked")){
+				var idforpush = parseInt(_this.attr("data-id"));
+				arrId.push(idforpush);
+			}
+		});
+		if(arrId.length>0){
+			var ajaxParams = {
+				url: config_ajax[config._envir].order,
+				type: config_ajax[config._envir].type,
+				data:arrId,
+				succFn: function(data){
+					var left = $(window).width()/2;
+	                var top = $(window).height()/2 + $(window).scrollTop();
+	                var changeWidth = $(".pop-ups").width();
+	                var changeHeight = $(".pop-ups").height();
+					$(".pop-ups").css({"width":changeWidth + "px","height":changeHeight + "px","left":left-changeWidth/2 + "px","top":top-changeHeight/2 +"px"}).show();
+				}
+			};
+			Util.requestAjaxFn(ajaxParams);
+		}else{
+			alert("请先选择要报价的账号！");
+		}
+	});
+	//弹框相关操作
+	$(".pop-ups .close,.pop-ups .cancle,.pop-ups .certain").on("click",function(){
+		$(".pop-ups").hide();
+	});
 	//hover显示二维码图片
 	$("#result-con").on('mouseenter','.icon-02',function(){
 		$(this).parents(".accountnum").next(".webchat-codes").css("left","86px").show();
