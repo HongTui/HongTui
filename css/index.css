@@ -11303,7 +11303,6 @@ input {
   font-size: 16px;
   cursor: pointer;
 }
-.hongtui-result-box .checkbox2-box .checkbox2:hover,
 .hongtui-result-box .checkbox2-box .checkbox2.checked {
   background: url("../images/checkbox2-checked.png") no-repeat left center;
 }

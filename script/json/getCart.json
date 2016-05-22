@@ -1,0 +1,50 @@
+{
+	"TotalCount": 12,
+	"Page": 0,
+	"PageSize": 10,
+	"Items": [
+		{
+			"Id": 12,
+			"Wxname": "Wxname",
+			"Avatar": "/images/picture.png",
+			"AuthInfo": "微信认证",
+			"Qrcode": "Qrcode",
+			"Category": "Category",
+			"Intruduct": "Intruduct",
+			"FollowCount": 1000,
+			"MGTopSPrice": 123,
+			"MGTopHPrice": 222,
+			"MGTopRead": 333,
+			"MGSecondSPrice": 444,
+			"MGSecondHPrice": 555,
+			"MGSecondRead": 666,
+			"MGOtherSPrice": 777,
+			"MGOtherHPrice": 888,
+			"MGOtherRead": 999,
+			"SGSPrice": 1000,
+			"SGHPrice": 1100,
+			"SGRead": 1200
+		},{
+			"Id": 1,
+			"Wxname": "Wxname2",
+			"Avatar": "/images/picture.png",
+			"AuthInfo": "微信认证",
+			"Qrcode": "Qrcode",
+			"Category": "Category",
+			"Intruduct": "Intruduct",
+			"FollowCount": 1000,
+			"MGTopSPrice": 1213,
+			"MGTopHPrice": 2222,
+			"MGTopRead": 3333,
+			"MGSecondSPrice": 4444,
+			"MGSecondHPrice": 5555,
+			"MGSecondRead": 6666,
+			"MGOtherSPrice": 7777,
+			"MGOtherHPrice": 8888,
+			"MGOtherRead": 9999,
+			"SGSPrice": 1000,
+			"SGHPrice": 1100,
+			"SGRead": 1200
+		}
+	]
+}
