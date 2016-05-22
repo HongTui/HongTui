@@ -10792,6 +10792,7 @@ input {
 .find {
   font-size: 14px;
   margin-top: 40px;
+  position: relative;
 }
 .find > div {
   float: left;
@@ -10808,7 +10809,6 @@ input {
   display: block;
   float: left;
   padding: 0 12px;
-  background-color: #ffffff;
   height: 22px;
   line-height: 22px;
   border-radius: 12px;
@@ -10920,6 +10920,18 @@ input {
 }
 .find .therange.read {
   float: left;
+}
+.find .more-other {
+  position: absolute;
+  width: 620px;
+  height: 0;
+  height: 50px;
+  left: 177px;
+  top: 25px;
+  padding: 10px 0px;
+  background-color: #f3f3f3;
+  z-index: 10;
+  display: none;
 }
 .hongtui-line {
   width: 100%;
@@ -11066,6 +11078,7 @@ input {
   height: 140px;
   float: right;
   border-bottom: 3px solid #f1f1f1;
+  position: relative;
 }
 .hongtui-result-box .result-content .content-right .accountnum {
   float: left;
@@ -11096,6 +11109,7 @@ input {
   height: 26px;
   background: url("../images/icon-02.png") no-repeat center center;
   margin-right: 20px;
+  cursor: pointer;
 }
 .hongtui-result-box .result-content .content-right .accountnum .icon-03 {
   display: inline-block;
@@ -11132,6 +11146,17 @@ input {
 .hongtui-result-box .result-content .content-right .thridprice > div,
 .hongtui-result-box .result-content .content-right .forthprice > div {
   line-height: 24px;
+}
+.hongtui-result-box .result-content .content-right .webchat-codes {
+  width: 139px;
+  height: 147px;
+  padding-top: 18px;
+  padding-left: 12px;
+  background-color: #fff;
+  position: absolute;
+  left: -18px;
+  top: 100px;
+  background: url("../images/webchat-codes-bg.png") no-repeat;
 }
 .hongtui-result-box .result-content .content-right .operation {
   float: left;
