@@ -7,7 +7,8 @@ var config_ajax = {
 		'operFav': './script/json/operFav.json',
 		'cart':'./script/json/Cart.json',
 		'getfavo':'./script/json/selfMedia.json',
-		"getCart": './script/json/getCart.json'
+		"getCart": './script/json/getCart.json',
+		"order": './script/json/operFav.json'
 	},
 	server: {
 		'type': 'POST',
