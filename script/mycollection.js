@@ -13,7 +13,7 @@ $(function(){
 	};
 	function getList(){
 		var ajaxParams = {
-			url: config_ajax[config._envir].getMedia,
+			url: config_ajax[config._envir].getfavo,
 			type: config_ajax[config._envir].type,
 			data: config.data,
 			succFn: function(data){
@@ -81,8 +81,8 @@ $(function(){
 	});
 	//hover显示二维码图片
 	$("#result-con").on('mouseenter','.icon-02',function(){
-		$("#result-con .webchat-codes").show();
+		$(this).parents(".accountnum").next(".webchat-codes").show();
 	}).on('mouseleave','.icon-02',function(){
-		$("#result-con .webchat-codes").hide();
+		$(this).parents(".accountnum").next(".webchat-codes").hide();
 	})
 })

@@ -99,6 +99,12 @@ $(function(){
 			$allCheck.removeClass('checked');
 		}
 	}
+	//hover显示二维码图片
+	$("#result-con").on('mouseenter','.icon-02',function(){
+		$(this).parents(".accountnum").next(".webchat-codes").css("left","86px").show();
+	}).on('mouseleave','.icon-02',function(){
+		$(this).parents(".accountnum").next(".webchat-codes").hide();
+	})
 });
 
 

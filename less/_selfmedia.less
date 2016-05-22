@@ -495,6 +495,7 @@ input{
 			    left: -18px;
 			    top: 100px;
 			    background: url("../images/webchat-codes-bg.png") no-repeat;
+			    z-index: 10;
 			}
 			.operation{
 				float: left;
@@ -521,6 +522,9 @@ input{
 					margin-top: 10px;
 					cursor: pointer;
 					background: url("../images/selfmedia.png") no-repeat center center;
+					&:hover,&.selected{
+						background: url("../images/selfmedia-selected.png") no-repeat center center;
+					}
 				}
 			}
 		}

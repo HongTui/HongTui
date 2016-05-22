@@ -11146,6 +11146,7 @@ input {
   left: -18px;
   top: 100px;
   background: url("../images/webchat-codes-bg.png") no-repeat;
+  z-index: 10;
 }
 .hongtui-result-box .result-content .content-right .operation {
   float: left;
@@ -11174,6 +11175,10 @@ input {
   margin-top: 10px;
   cursor: pointer;
   background: url("../images/selfmedia.png") no-repeat center center;
+}
+.hongtui-result-box .result-content .content-right .operation .price:hover,
+.hongtui-result-box .result-content .content-right .operation .price.selected {
+  background: url("../images/selfmedia-selected.png") no-repeat center center;
 }
 .flip-box {
   width: 100%;
