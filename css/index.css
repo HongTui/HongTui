@@ -41,13 +41,13 @@
   font-size: 30px;
 }
 .link-basecolor {
-  color: #333333;
+  color: #333;
 }
 .link-basecolor:hover {
   color: #53a0e3;
 }
 .link-lighter-color {
-  color: #999999;
+  color: #999;
 }
 .link-lighter-color:hover {
   color: #53a0e3;
@@ -89,7 +89,7 @@
   color: #ffe296;
 }
 .global-gray-light {
-  color: #999999;
+  color: #999;
 }
 .vertical-high-80 {
   height: 80px;
@@ -1822,7 +1822,6 @@ input::-ms-clear {
   position: absolute;
   /*background-color: #0cc;*/
   /*#6EBA2C*/
-
   background-color: #6EBA2C;
   border-radius: 50%;
 }
@@ -1842,7 +1841,6 @@ input::-ms-clear {
   top: 0px;
   left: 0px;
   /*background-color: #00aacc;*/
-
   background-color: #E3E3E3;
   border-radius: 50%;
   transform: rote(30deg);
@@ -2422,9 +2420,7 @@ span.span-product {
   left: 0px;
   top: 15px;
   /**/
-
   /**/
-
 }
 .case-xs .cast-crile .circle .pie_left,
 .case-xs .cast-crile .circle .pie_right {
@@ -2436,7 +2432,6 @@ span.span-product {
   width: 50px;
   height: 50px;
   /*background-color: #00aacc;*/
-
   background-color: #E3E3E3;
 }
 .case-xs .cast-crile .circle .pie_left,
@@ -3575,7 +3570,6 @@ span.ico-failure {
   padding-top: 10px;
   padding-bottom: 8px;
   /*chrome和safari hank*/
-
 }
 .fild-group.fild-group-radio {
   padding-top: 3px;
@@ -7462,7 +7456,6 @@ a.btn-fill span {
   right: 4px;
   top: 6px;
   /**/
-
 }
 .progress-bar .circle .pie_left,
 .progress-bar .circle .pie_right {
@@ -10318,7 +10311,6 @@ input:focus {
   background: url('../images/big-bg.jpg') no-repeat;
   background-position: center top;
   /*background-size: contain;*/
-
   width: 100%;
   height: 635px;
 }
@@ -10351,7 +10343,6 @@ input:focus {
   width: 9px;
   height: 9px;
   /*z-index: 1px;*/
-
   cursor: pointer;
 }
 .login .login-in .login-error {
@@ -10456,7 +10447,7 @@ input:focus {
   margin-top: 112px;
   width: 978px;
   height: 203px;
-  background: #ffffff url('../images/about-us-send.png') no-repeat;
+  background: #fff url('../images/about-us-send.png') no-repeat;
 }
 .home-type {
   margin-top: 174px;
@@ -10480,7 +10471,6 @@ input:focus {
   color: #3d3d3d;
   float: left;
   /*font-weight: normal;*/
-
 }
 .home-title span {
   display: block;
@@ -10650,7 +10640,6 @@ input:focus {
 }
 .myaccount-info li > div {
   /*height: 8*/
-
 }
 input {
   outline: none;
@@ -10870,7 +10859,7 @@ input {
   background-color: #f3f3f3;
 }
 .find .find-items .select-box:hover .select-items {
-  display: block;
+  /*display: block;*/
 }
 .find .find-more {
   float: right;
@@ -10960,14 +10949,14 @@ input {
   color: #fc6a6a;
 }
 .hongtui-result-box .result-filter .checkbox {
-  width: 75px;
+  width: 70px;
   background: url("../images/checkbox.png") no-repeat left center;
   text-align: right;
   margin-right: 55px;
   cursor: pointer;
 }
 .hongtui-result-box .result-filter .checkbox.first {
-  margin-left: 485px;
+  margin-left: 465px;
 }
 .hongtui-result-box .result-filter .checkbox:hover,
 .hongtui-result-box .result-filter .checkbox.checked {
@@ -10975,7 +10964,7 @@ input {
 }
 .hongtui-result-box .result-filter .select-box {
   float: left;
-  width: 123px;
+  width: 185px;
   height: 30px;
   line-height: 30px;
   cursor: pointer;
@@ -10985,7 +10974,7 @@ input {
   float: left;
   color: #000;
   font-size: 14px;
-  margin: 0px 8px 0 15px;
+  margin: 0px 0px 0 15px;
 }
 .hongtui-result-box .result-filter .select-box .triangle {
   display: block;
@@ -11003,7 +10992,7 @@ input {
 }
 .hongtui-result-box .result-filter .select-box .select-items .select-item {
   display: block;
-  width: 108px;
+  width: 170px;
   height: 30px;
   line-height: 30px;
   background-color: #f3f3f3;
@@ -11019,7 +11008,7 @@ input {
   background-color: #f3f3f3;
 }
 .hongtui-result-box .result-filter .select-box:hover .select-items {
-  display: block;
+  /*display: block;*/
 }
 .hongtui-result-box .result-header {
   float: left;
