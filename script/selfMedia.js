@@ -1,4 +1,8 @@
 $(function(){
+    template.helper('fmtMoney', function(money, length, isYuan){
+		return Util.fmtMoney(money, length, isYuan);
+    })
+
 	var config = {
 		data: {
 			Page: 0,
@@ -39,6 +43,7 @@ $(function(){
 			succFn: function(data){
 				data.TotalPage = Math.ceil(data.TotalCount/data.PageSize) - 1;
 				config.data.TotalPage = data.TotalPage;
+				$("#result_totalcount").html(Util.fmtMoney(data.TotalCount, 0, true));
 				$("#result-con").html(template('temp_list', data));
 				$("#page_flip").html(template('temp_flip', data))
 			}

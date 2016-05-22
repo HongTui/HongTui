@@ -153,7 +153,7 @@
 	<div class="hongtui-result-box">
 		<div class="result-filter">
 			<div class="result-num">
-				共为你找到<span>1384</span>个结果
+				共为你找到<span id="result_totalcount">0</span>个结果
 			</div>
 			<div class="checkbox first">微信认证</div>
 			<div class="checkbox">支持原创</div>
@@ -323,23 +323,23 @@
 				<span class="icon-02"></span>
 				<span class="icon-03"></span>
 			</div>
-			<div class="fansnum">{{item.FollowCount}}</div>
+			<div class="fansnum">{{fmtMoney(item.FollowCount, 0, true)}}</div>
 			<div class="readnum">{{item.MGTopRead}}</div>
 			<div class="firstprice">
-				<div class="soft">软广：<span>{{item.MGTopSPrice}}</span></div>
-				<div class="hard">硬广：<span>{{item.MGTopHPrice}}</span></div>
+				<div class="soft">软广：<span>{{fmtMoney(item.MGTopSPrice, 0, true)}}</span></div>
+				<div class="hard">硬广：<span>{{fmtMoney(item.MGTopHPrice, 0, true)}}</span></div>
 			</div>
 			<div class="secondprice">
-				<div class="soft">软广：<span>{{item.MGSecondSPrice}}</span></div>
-				<div class="hard">硬广：<span>{{item.MGSecondHPrice}}</span></div>
+				<div class="soft">软广：<span>{{fmtMoney(item.MGSecondSPrice, 0, true)}}</span></div>
+				<div class="hard">硬广：<span>{{fmtMoney(item.MGSecondHPrice, 0, true)}}</span></div>
 			</div>
 			<div class="thridprice">
-				<div class="soft">软广：<span>{{item.MGOtherSPrice}}</span></div>
-				<div class="hard">硬广：<span>{{item.MGOtherHPrice}}</span></div>
+				<div class="soft">软广：<span>{{fmtMoney(item.MGOtherSPrice, 0, true)}}</span></div>
+				<div class="hard">硬广：<span>{{fmtMoney(item.MGOtherHPrice, 0, true)}}</span></div>
 			</div>
 			<div class="forthprice" style="width:185px;">
-				<div class="soft">软广：<span>{{item.SGSPrice}}</span></div>
-				<div class="hard">硬广：<span>{{item.SGHPrice}}</span></div>
+				<div class="soft">软广：<span>{{fmtMoney(item.SGSPrice, 0, true)}}</span></div>
+				<div class="hard">硬广：<span>{{fmtMoney(item.SGHPrice, 0, true)}}</span></div>
 			</div>
 			<div class="operation">
 				<div class="collect" data-id="{{item.Id}}"></div>
