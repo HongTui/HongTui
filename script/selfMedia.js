@@ -9,8 +9,7 @@ $(function(){
 			PageSize: 10,
 			TotalPage: 0,
 			Category: ""
-		},
-		_envir: 'local'
+		}
 	};
 	var $category = $("#search_category,#search_category_nore");
 	var $priceItem = $("#PriceItem");
@@ -57,8 +56,8 @@ $(function(){
 			SortType: $('[data-type=sort] .select').attr('data-sortType')
 		};
 		var ajaxParams = {
-			url: config_ajax[config._envir].getMedia,
-			type: config_ajax[config._envir].type,
+			url: config_ajax[config_ajax.envir].getMedia,
+			type: config_ajax[config_ajax.envir].type,
 			data: $.extend(config.data, dataParams),
 			succFn: function(data){
 				data.TotalPage = Math.ceil(data.TotalCount/data.PageSize) - 1;
@@ -157,10 +156,10 @@ $(function(){
 			type = "DELETE";
 		}else{
 			//收藏
-			type = config_ajax[config._envir].type;
+			type = config_ajax[config_ajax.envir].type;
 		}
 		var ajaxParams = {
-			url: config_ajax[config._envir].operFav,
+			url: config_ajax[config_ajax.envir].operFav,
 			type: type,
 			data: {
 				Wid: $this.attr('data-id')
@@ -180,10 +179,10 @@ $(function(){
 			type = "DELETE";
 		}else{
 			//添加报价
-			type = config_ajax[config._envir].type;
+			type = config_ajax[config_ajax.envir].type;
 		}
 		var ajaxParams = {
-			url: config_ajax[config._envir].cart,
+			url: config_ajax[config_ajax.envir].cart,
 			type: type,
 			data: {
 				Wid: $this.attr('data-id')

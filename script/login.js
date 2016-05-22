@@ -2,7 +2,6 @@ $(function(){
 	var $name = $('#login-phone'),
 		$pwd = $('#login-pwd'),
 		$error = $('.login-error');
-	var _envir = 'local';
 
 	$('.login-in input').on('focus', function(){
 		$error.html('');
@@ -20,8 +19,8 @@ $(function(){
 		}
 
 		var params = {
-			url: config_ajax[_envir].login,
-			type: config_ajax[_envir].type,
+			url: config_ajax[config_ajax.envir].login,
+			type: config_ajax[config_ajax.envir].type,
 			data: {
 				username: $.trim($name.val()),
 				password: $.trim($pwd.val()),

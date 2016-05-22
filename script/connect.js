@@ -16,5 +16,6 @@ var config_ajax = {
 		'getMedia': '/Api/Media',
 		'operFav': '/Api/Favo',
 		'getCart': '/Api/Cart'
-	}
+	},
+	envir: 'server'
 };

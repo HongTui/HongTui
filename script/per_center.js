@@ -9,16 +9,15 @@ $(function(){
 			PageSize: 10,
 			TotalPage: 0,
 			Category: ""
-		},
-		_envir: 'local'
+		}
 	};
 	var $result_list = $("#result-con");
 	var $allCheck = $(".hongtui-result-box .checkbox2-box .checkbox2");
 
 	function getList(){
 		var ajaxParams = {
-			url: config_ajax[config._envir].getCart,
-			type: config_ajax[config._envir].type,
+			url: config_ajax[config_ajax.envir].getCart,
+			type: config_ajax[config_ajax.envir].type,
 			data: {
 				Page: config.data.Page,
 				PageSize: config.data.PageSize
@@ -66,7 +65,7 @@ $(function(){
 	$result_list.on('click', '.delete', function(){
 		var $this = $(this);
 		var ajaxParams = {
-			url: config_ajax[config._envir].operFav,
+			url: config_ajax[config_ajax.envir].operFav,
 			type: "DELETE",
 			data: {
 				Wid: $this.attr('data-id')

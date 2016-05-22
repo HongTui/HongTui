@@ -8,13 +8,12 @@ $(function(){
 			PageSize: 10,
 			TotalPage: 0,
 			Category: ""
-		},
-		_envir: 'local'
+		}
 	};
 	function getList(){
 		var ajaxParams = {
-			url: config_ajax[config._envir].getfavo,
-			type: config_ajax[config._envir].type,
+			url: config_ajax[config_ajax.envir].getfavo,
+			type: config_ajax[config_ajax.envir].type,
 			data: config.data,
 			succFn: function(data){
 				data.TotalPage = Math.ceil(data.TotalCount/data.PageSize) - 1;
@@ -36,10 +35,10 @@ $(function(){
 			type = "DELETE";
 		}else{
 			//收藏
-			type = config_ajax[config._envir].type;
+			type = config_ajax[config_ajax.envir].type;
 		}
 		var ajaxParams = {
-			url: config_ajax[config._envir].operFav,
+			url: config_ajax[config_ajax.envir].operFav,
 			type: type,
 			data: {
 				Wid: $this.attr('data-id')
