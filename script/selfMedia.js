@@ -21,20 +21,40 @@ $(function(){
 
 	function getList(){
 		var $price = $priceItem.find('.item.current');
+		var _price_min = 0, _price_max = 0;
+		if($price.length == 0){
+			var $input = $priceItem.closest('.hongtui-box').find('[data-type=number]');
+			_price_min = $input.eq(0).val();
+			_price_max = $input.eq(1).val();
+		}else{
+			_price_min = $price.attr('data-min');
+			_price_max = $price.attr('data-max');
+		}
+
 		var $fun = $funs.find('.item.current');
+		var _fun_min = 0, _fun_max = 0;
+		if($fun.length == 0){
+			var $input = $funs.closest('.hongtui-box').find('[data-type=number]');
+			_fun_min = $input.eq(0).val() * 10000;
+			_fun_max = $input.eq(1).val() * 10000;
+		}else{
+			_fun_min = $fun.attr('data-min');
+			_fun_max = $fun.attr('data-max');
+		}
+
 
 		var dataParams = {
 			Category: $category.find('.current').html(),
 			PriceItem: $priceItem_type.attr('data-type'),
-			PriceMin: $price.attr('data-min'),
-			PriceMax: $price.attr('data-max'),
-			FollowMin: $fun.attr('data-min'),
-			FollowMax: $fun.attr('data-max'),
+			PriceMin: _price_min,
+			PriceMax: _price_max,
+			FollowMin: _fun_min,
+			FollowMax: _fun_max,
 			ReadItem: $readItem_type.attr('data-type'),
-			ReadMin: $readItem.find("input:eq(0)").val(),
-			ReadMax: $readItem.find("input:eq(1)").val(),
-			SortItem: "GTopSPrice",
-			SortType: "ASC"
+			ReadMin: $readItem.find("input:eq(0)").val() * 10000,
+			ReadMax: $readItem.find("input:eq(1)").val() * 10000,
+			SortItem: $('[data-type=sort] .select').attr('data-sortItem'),
+			SortType: $('[data-type=sort] .select').attr('data-sortType')
 		};
 		var ajaxParams = {
 			url: config_ajax[config._envir].getMedia,
@@ -87,6 +107,11 @@ $(function(){
 		$(this).siblings().removeClass('current');
 		$(this).parents(".find-items").siblings(".find-items").find(".item").removeClass('current');
 		$(this).addClass('current');
+		//清空输入框的内容
+		$(this).closest('.hongtui-box').find('[data-type=number]').val('');
+		//重置查询页码
+		config.data.Page = 0;
+		getList();
 	});
 
 	//绑定选择类型下拉框
@@ -94,6 +119,29 @@ $(function(){
 		var $select = $(this).closest('.select-box');
 		$select.find('.select').attr('data-type', $(this).attr('data-type')).html($(this).html());
 		$(this).closest('.select-items').hide();
+
+		//重置查询页码
+		config.data.Page = 0;
+		getList();
+	});
+	//绑定排序
+	$('[data-type=sort]').on('mouseenter', function(){
+		$(this).find('.select-items').show();
+	}).on('mouseleave', function(){
+		$(this).find('.select-items').hide();
+	});
+	$('[data-type=sort] .select-item').on('click', function(){
+		var $this = $(this);
+		var $select = $this.closest('.select-box').find('.select');
+		$select.html($this.html()).attr({
+			"data-sortItem": $this.attr('data-sortItem'),
+			"data-sortType": $this.attr('data-sortType')
+		});
+		$this.closest('.select-items').hide();
+		
+		//重置查询页码
+		config.data.Page = 0;
+		getList();
 	});
 	$(".find-items .select-box").on('mouseenter', function(){
 		$(this).find('.select-items').show();
@@ -145,6 +193,21 @@ $(function(){
 			}
 		};
 		Util.requestAjaxFn(ajaxParams);
+	});
+	//控制数字框不能输入其他字符
+	$('[data-type="number"]').on('change', function(){
+		var reg = /^\d+$/;
+		var value = $(this).val();
+		$(this).val($(this).val().replace(/[^\d]/g, ''));
+	});
+	//点击输入框边的确定按钮时触发
+	$('.range-certain').on('click', function(){
+		var _type = $(this).attr('data-type');
+		$(this).closest('.hongtui-box').find('.find-items .item.current').removeClass('current');
+
+		//重置查询页码
+		config.data.Page = 0;
+		getList();
 	})
 	//hover显示二维码图片
 	$("#result-con").on('mouseenter','.icon-02',function(){

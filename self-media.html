@@ -113,7 +113,7 @@
 			<span class="range-symbol">-</span>
 			<input class="range-to" data-type="number"/>
 			<span class="range-unit">元</span>
-			<span class="range-certain">确定</span>
+			<span class="range-certain" data-type="price_submit">确定</span>
 		</div>
 		<br/>
 	</div>
@@ -134,7 +134,7 @@
 			<span class="range-symbol">-</span>
 			<input class="range-to" data-type="number"/>
 			<span class="range-unit">万</span>
-			<span class="range-certain">确定</span>
+			<span class="range-certain" data-type="funsnum_submit">确定</span>
 		</div>
 		<br/>
 	</div>
@@ -157,7 +157,7 @@
 			<span class="range-symbol">-</span>
 			<input class="range-to" data-type="number"/>
 			<span class="range-unit">万</span>
-			<span class="range-certain">确定</span>
+			<span class="range-certain" data-type="readnum_submit">确定</span>
 		</div>
 		<br/>
 	</div>
@@ -174,14 +174,20 @@
 			<div class="checkbox first">微信认证</div>
 			<div class="checkbox">支持原创</div>
 			<div class="checkbox">我的收藏</div>
-			<div class="select-box">
-				<span class="select">默认排序</span>
+			<div class="select-box" data-type="sort">
+				<span class="select" data-sortItem="" data-sortType="">默认排序</span>
 				<span class="triangle"></span>
 				<div class="select-items">
-					<span class="select-item">默认排序</span>
-					<span class="select-item">综合排序</span>
-					<span class="select-item">价格从低到高</span>
-					<span class="select-item">阅读数从低到高</span>
+					<span class="select-item" data-sortItem="" data-sortType="">默认排序</span>
+					<span class="select-item" data-sortItem="Asc" data-sortType="MGTopSPrice">头条软广价格从低到高</span>
+					<span class="select-item" data-sortItem="Asc" data-sortType="MGTopHPrice">头条硬广价格从低到高</span>
+					<span class="select-item" data-sortItem="Asc" data-sortType="MGSecondSPrice">次条软广价格从低到高</span>
+					<span class="select-item" data-sortItem="Asc" data-sortType="MGSecondHPrice">次条硬广价格从低到高</span>
+					<span class="select-item" data-sortItem="Asc" data-sortType="MGOtherSPrice">3-n条软广价格从低到高</span>
+					<span class="select-item" data-sortItem="Asc" data-sortType="MGOtherHPrice">3-n条硬广价格从低到高</span>
+					<span class="select-item" data-sortItem="Asc" data-sortType="SGSPrice">单图文软广价格从低到高</span>
+					<span class="select-item" data-sortItem="Asc" data-sortType="SGHPrice">单图文硬广价格从低到高</span>
+					<span class="select-item" data-sortItem="Asc" data-sortType="MGTopRead">头条阅读数从低到高</span>
 				</div>
 			</div>
 		</div>

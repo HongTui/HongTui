@@ -373,6 +373,9 @@ Util.requestAjaxFn = function(options){
         type: options.type || 'POST',
         dataType: options.dataType || 'json',
         async:options.async == false ? false : true,
+         headers: {
+            Authorization:'Bearer ' + config_ajax.token 
+        },
         data: data
     })
     .done(function(data) {

@@ -32,6 +32,7 @@ $(function(){
 			succFn: function(data){
 				if(data.errorCode == 0){
 					//成功
+					config_ajax.token = data.access_token;
 				}
 			}
 		};
