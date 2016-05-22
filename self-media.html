@@ -297,13 +297,7 @@
 	<!-- 查询结果 end -->
 	<!-- 翻页 start-->
 	<div class="flip-box">
-		<div class="flip">
-			<span>每页显示 10 条内容&nbsp;&nbsp;&nbsp;&nbsp;共<span clsss="totalpage"> 13140 </span>页</span>
-			<span class="homepage disabled">首页</span>
-			<span class="previous disabled">上一页</span>
-			<span class="page">1/13140</span>
-			<span class="next">下一页</span>
-			<span class="lastpage">末页</span>
+		<div class="flip" id="page_flip">
 		</div>
 	</div>
 	<!-- 翻页 end -->
@@ -354,5 +348,13 @@
 		</div>
 	</div>
 {{/each}}
+</script>
+<script type="template/html" id="temp_flip">
+	<span>每页显示 {{PageSize}} 条内容&nbsp;&nbsp;&nbsp;&nbsp;共<span clsss="totalpage"> {{TotalPage}} </span>页</span>
+	<span class="homepage {{if Page == 0}}disabled{{/if}}">首页</span>
+	<span class="previous {{if Page == 0}}disabled{{/if}}">上一页</span>
+	<span class="page">{{Page + 1}}/{{TotalCount}}</span>
+	<span class="next {{if Page == TotalPage}}disabled{{/if}}">下一页</span>
+	<span class="lastpage {{if Page == TotalPage}}disabled{{/if}}">末页</span>
 </script>
 </html>
