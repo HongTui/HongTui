@@ -11157,6 +11157,7 @@ input {
   left: -18px;
   top: 100px;
   background: url("../images/webchat-codes-bg.png") no-repeat;
+  z-index: 10;
 }
 .hongtui-result-box .result-content .content-right .operation {
   float: left;

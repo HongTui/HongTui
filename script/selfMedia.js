@@ -148,9 +148,9 @@ $(function(){
 	})
 	//hover显示二维码图片
 	$("#result-con").on('mouseenter','.icon-02',function(){
-		$("#result-con .webchat-codes").show();
+		$(this).parents(".accountnum").next(".webchat-codes").show();
 	}).on('mouseleave','.icon-02',function(){
-		$("#result-con .webchat-codes").hide();
+		$(this).parents(".accountnum").next(".webchat-codes").hide();
 	})
 	//常见分类 更多点击事件
 	$(".hongtui-box.find").on('click','.find-more',function(){
