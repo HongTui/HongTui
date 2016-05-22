@@ -123,6 +123,29 @@ $(function(){
 		};
 		Util.requestAjaxFn(ajaxParams);
 	})
+	//点击报价触发事件
+	$("#result-con").on('click', '.price', function(){
+		var type = "";
+		var $this = $(this);
+		if($this.hasClass('selected')){
+			//取消报价
+			type = "DELETE";
+		}else{
+			//添加报价
+			type = config_ajax[config._envir].type;
+		}
+		var ajaxParams = {
+			url: config_ajax[config._envir].cart,
+			type: type,
+			data: {
+				Wid: $this.attr('data-id')
+			},
+			succFn: function(data){
+				$this.toggleClass('selected');
+			}
+		};
+		Util.requestAjaxFn(ajaxParams);
+	})
 	//hover显示二维码图片
 	$("#result-con").on('mouseenter','.icon-02',function(){
 		$("#result-con .webchat-codes").show();

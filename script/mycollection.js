@@ -13,7 +13,7 @@ $(function(){
 	};
 	function getList(){
 		var ajaxParams = {
-			url: config_ajax[config._envir].getMedia,
+			url: config_ajax[config._envir].getfavo,
 			type: config_ajax[config._envir].type,
 			data: config.data,
 			succFn: function(data){
