@@ -17,7 +17,7 @@ $(function(){
 	function getList(){
 		var ajaxParams = {
 			url: config_ajax[config_ajax.envir].getCart,
-			type: config_ajax[config_ajax.envir].type,
+			type: 'GET',
 			data: {
 				Page: config.data.Page,
 				PageSize: config.data.PageSize

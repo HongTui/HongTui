@@ -13,7 +13,7 @@ $(function(){
 	function getList(){
 		var ajaxParams = {
 			url: config_ajax[config_ajax.envir].getfavo,
-			type: config_ajax[config_ajax.envir].type,
+			type: 'GET',
 			data: config.data,
 			succFn: function(data){
 				data.TotalPage = Math.ceil(data.TotalCount/data.PageSize) - 1;

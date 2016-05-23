@@ -57,7 +57,7 @@ $(function(){
 		};
 		var ajaxParams = {
 			url: config_ajax[config_ajax.envir].getMedia,
-			type: config_ajax[config_ajax.envir].type,
+			type: 'GET',
 			data: $.extend(config.data, dataParams),
 			succFn: function(data){
 				data.TotalPage = Math.ceil(data.TotalCount/data.PageSize) - 1;

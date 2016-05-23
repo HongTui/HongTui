@@ -41,13 +41,13 @@
   font-size: 30px;
 }
 .link-basecolor {
-  color: #333333;
+  color: #333;
 }
 .link-basecolor:hover {
   color: #53a0e3;
 }
 .link-lighter-color {
-  color: #999999;
+  color: #999;
 }
 .link-lighter-color:hover {
   color: #53a0e3;
@@ -89,7 +89,7 @@
   color: #ffe296;
 }
 .global-gray-light {
-  color: #999999;
+  color: #999;
 }
 .vertical-high-80 {
   height: 80px;
@@ -1822,7 +1822,6 @@ input::-ms-clear {
   position: absolute;
   /*background-color: #0cc;*/
   /*#6EBA2C*/
-
   background-color: #6EBA2C;
   border-radius: 50%;
 }
@@ -1842,7 +1841,6 @@ input::-ms-clear {
   top: 0px;
   left: 0px;
   /*background-color: #00aacc;*/
-
   background-color: #E3E3E3;
   border-radius: 50%;
   transform: rote(30deg);
@@ -2422,9 +2420,7 @@ span.span-product {
   left: 0px;
   top: 15px;
   /**/
-
   /**/
-
 }
 .case-xs .cast-crile .circle .pie_left,
 .case-xs .cast-crile .circle .pie_right {
@@ -2436,7 +2432,6 @@ span.span-product {
   width: 50px;
   height: 50px;
   /*background-color: #00aacc;*/
-
   background-color: #E3E3E3;
 }
 .case-xs .cast-crile .circle .pie_left,
@@ -3575,7 +3570,6 @@ span.ico-failure {
   padding-top: 10px;
   padding-bottom: 8px;
   /*chrome和safari hank*/
-
 }
 .fild-group.fild-group-radio {
   padding-top: 3px;
@@ -7462,7 +7456,6 @@ a.btn-fill span {
   right: 4px;
   top: 6px;
   /**/
-
 }
 .progress-bar .circle .pie_left,
 .progress-bar .circle .pie_right {
@@ -10318,7 +10311,6 @@ input:focus {
   background: url('../images/big-bg.jpg') no-repeat;
   background-position: center top;
   /*background-size: contain;*/
-
   width: 100%;
   height: 635px;
 }
@@ -10351,7 +10343,6 @@ input:focus {
   width: 9px;
   height: 9px;
   /*z-index: 1px;*/
-
   cursor: pointer;
 }
 .login .login-in .login-error {
@@ -10456,7 +10447,7 @@ input:focus {
   margin-top: 112px;
   width: 978px;
   height: 203px;
-  background: #ffffff url('../images/about-us-send.png') no-repeat;
+  background: #fff url('../images/about-us-send.png') no-repeat;
 }
 .home-type {
   margin-top: 174px;
@@ -10480,7 +10471,6 @@ input:focus {
   color: #3d3d3d;
   float: left;
   /*font-weight: normal;*/
-
 }
 .home-title span {
   display: block;
@@ -10650,7 +10640,6 @@ input:focus {
 }
 .myaccount-info li > div {
   /*height: 8*/
-
 }
 input {
   outline: none;
@@ -10871,7 +10860,6 @@ input {
 }
 .find .find-items .select-box:hover .select-items {
   /*display: block;*/
-
 }
 .find .find-more {
   float: right;
@@ -11021,7 +11009,6 @@ input {
 }
 .hongtui-result-box .result-filter .select-box:hover .select-items {
   /*display: block;*/
-
 }
 .hongtui-result-box .result-header {
   float: left;

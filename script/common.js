@@ -369,7 +369,7 @@ Util.requestAjaxFn = function(options){
     data.t = Math.random();
 
     $.ajax({
-        url: options.url,
+        url: config_ajax[config_ajax.envir].CORS + options.url,
         type: options.type || 'POST',
         dataType: options.dataType || 'json',
         async:options.async == false ? false : true,
@@ -379,11 +379,6 @@ Util.requestAjaxFn = function(options){
         data: data
     })
     .done(function(data) {
-        if(data.errorCode == 1 && data.errorMessage == "noLogin"){
-            window.location.href = "https://passport.souyidai.com?backurl=" + document.URL;
-            return;
-        }
-
         options.succFn && options.succFn(data);
     })
     .fail(function() {

@@ -8,7 +8,8 @@ var config_ajax = {
 		'cart':'./script/json/Cart.json',
 		'getfavo':'./script/json/selfMedia.json',
 		"getCart": './script/json/getCart.json',
-		"order": './script/json/operFav.json'
+		"order": './script/json/operFav.json',
+		'CORS': ''
 	},
 	server: {
 		'type': 'POST',
@@ -16,7 +17,8 @@ var config_ajax = {
 		'userInfo': '/Api/Account/UserInfo',
 		'getMedia': '/Api/Media',
 		'operFav': '/Api/Favo',
-		'getCart': '/Api/Cart'
+		'getCart': '/Api/Cart',
+		'CORS': 'http://toufang.unity-ad.com'
 	},
 	envir: 'server'
 };
