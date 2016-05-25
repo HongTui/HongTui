@@ -115,7 +115,7 @@ $(function(){
 			var ajaxParams = {
 				url: config_ajax[config._envir].order,
 				type: config_ajax[config._envir].type,
-				data:arrId,
+				data: arrId,
 				succFn: function(data){
 					var left = $(window).width()/2;
 	                var top = $(window).height()/2 + $(window).scrollTop();

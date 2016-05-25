@@ -166,7 +166,7 @@
 	<span>每页显示 {{PageSize}} 条内容&nbsp;&nbsp;&nbsp;&nbsp;共<span clsss="totalpage"> {{TotalPage}} </span>页</span>
 	<span class="homepage {{if Page == 0}}disabled{{/if}}">首页</span>
 	<span class="previous {{if Page == 0}}disabled{{/if}}">上一页</span>
-	<span class="page">{{Page + 1}}/{{TotalCount}}</span>
+	<span class="page">{{Page + 1}}/{{TotalPage}}</span>
 	<span class="next {{if Page == TotalPage}}disabled{{/if}}">下一页</span>
 	<span class="lastpage {{if Page == TotalPage}}disabled{{/if}}">末页</span>
 </script>

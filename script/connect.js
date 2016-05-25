@@ -18,6 +18,7 @@ var config_ajax = {
 		'getMedia': '/Api/Media',
 		'getfavo': '/Api/Favo',
 		'getCart': '/Api/Cart',
+		"order": '/Api/Order',
 		'CORS': 'http://toufang.unity-ad.com'
 	},
 	envir: 'server'
