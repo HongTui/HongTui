@@ -88,7 +88,7 @@ $(function(){
 	})
 	//绑定全选事件
 	$allCheck.on('click', function(){
-		if($(this).hasClass('checkbox2')){
+		if($(this).hasClass('checked')){
 			$allCheck.removeClass('checked');
 			$result_list.find('.checkbox2').removeClass('checked');
 		}else{
