@@ -2,6 +2,9 @@ $(function(){
     template.helper('fmtMoney', function(money, length, isYuan){
 		return Util.fmtMoney(money, length, isYuan);
     })
+    template.helper('fmtString', function(str, len){
+		return str.substr(0, len);
+    })
 
 	var config = {
 		data: {

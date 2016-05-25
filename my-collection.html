@@ -123,40 +123,40 @@
 {{each Items as item}}
 	<div class="result-content cf">
 		<div class="content-left">
-			<div class="image" style="background-image:url('{{item.Avatar}}')"></div>
-			<div class="webChat">{{item.AuthInfo}}</div>
+			<div class="image" style="background-image:url('{{item.Item.Avatar}}')"></div>
+			<div class="webChat">{{fmtString(item.Item.AuthInfo, 4)}}</div>
 		</div>
 		<div class="content-right">
 			<div class="accountnum">
-				<span class="name">{{item.Wxname}}</span>
-				<span class="secondname">{{item.Wxid}}</span>
+				<span class="name">{{item.Item.Wxname}}</span>
+				<span class="secondname">{{item.Item.Wxid}}</span>
 				<span class="icon-01"></span>
 				<span class="icon-02"></span>
 				<span class="icon-03"></span>
 			</div>
 			<div class="webchat-codes" style="display: none;">
-		        <img src="{{item.Qrcode}}" width="120" height="120">
+		        <img src="{{item.Item.Qrcode}}" width="120" height="120">
 		    </div>
-			<div class="fansnum">{{item.FollowCount}}</div>
-			<div class="readnum">{{item.MGTopRead}}</div>
+			<div class="fansnum">{{item.Item.FollowCount}}</div>
+			<div class="readnum">{{item.Item.MGTopRead}}</div>
 			<div class="firstprice">
-				<div class="soft">软广：<span>{{item.MGTopSPrice}}</span></div>
-				<div class="hard">硬广：<span>{{item.MGTopHPrice}}</span></div>
+				<div class="soft">软广：<span>{{item.Item.MGTopSPrice}}</span></div>
+				<div class="hard">硬广：<span>{{item.Item.MGTopHPrice}}</span></div>
 			</div>
 			<div class="secondprice">
-				<div class="soft">软广：<span>{{item.MGSecondSPrice}}</span></div>
-				<div class="hard">硬广：<span>{{item.MGSecondHPrice}}</span></div>
+				<div class="soft">软广：<span>{{item.Item.MGSecondSPrice}}</span></div>
+				<div class="hard">硬广：<span>{{item.Item.MGSecondHPrice}}</span></div>
 			</div>
 			<div class="thridprice">
-				<div class="soft">软广：<span>{{item.MGOtherSPrice}}</span></div>
-				<div class="hard">硬广：<span>{{item.MGOtherHPrice}}</span></div>
+				<div class="soft">软广：<span>{{item.Item.MGOtherSPrice}}</span></div>
+				<div class="hard">硬广：<span>{{item.Item.MGOtherHPrice}}</span></div>
 			</div>
 			<div class="forthprice" style="width:185px;">
-				<div class="soft">软广：<span>{{item.SGSPrice}}</span></div>
-				<div class="hard">硬广：<span>{{item.SGHPrice}}</span></div>
+				<div class="soft">软广：<span>{{item.Item.SGSPrice}}</span></div>
+				<div class="hard">硬广：<span>{{item.Item.SGHPrice}}</span></div>
 			</div>
 			<div class="operation">
-				<div class="collect" data-id="{{item.Id}}"></div>
+				<div class="collect" data-id="{{item.Item.Id}}"></div>
 			</div>
 		</div>
 	</div>

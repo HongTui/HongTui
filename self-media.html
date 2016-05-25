@@ -260,41 +260,41 @@
 {{each Items as item}}
 	<div class="result-content cf">
 		<div class="content-left">
-			<div class="image" style="background-image:url('{{item.Avatar}}')"></div>
-			<div class="webChat">{{item.AuthInfo}}</div>
+			<div class="image" style="background-image:url('{{item.Item.Avatar}}')"></div>
+			<div class="webChat">{{fmtString(item.Item.AuthInfo, 4)}}</div>
 		</div>
 		<div class="content-right">
 			<div class="accountnum">
-				<span class="name">{{item.Wxname}}</span>
-				<span class="secondname">{{item.Wxid}}</span>
+				<span class="name">{{item.Item.Wxname}}</span>
+				<span class="secondname">{{item.Item.Wxid}}</span>
 				<span class="icon-01"></span>
 				<span class="icon-02"></span>
 				<span class="icon-03"></span>
 			</div>
 			<div class="webchat-codes" style="display: none;">
-		        <img src="{{item.Qrcode}}" width="120" height="120">
+		        <img src="{{item.Item.Qrcode}}" width="120" height="120">
 		    </div>
-			<div class="fansnum">{{fmtMoney(item.FollowCount, 0, true)}}</div>
-			<div class="readnum">{{fmtMoney(item.MGTopRead, 0, true)}}</div>
+			<div class="fansnum">{{fmtMoney(item.Item.FollowCount, 0, true)}}</div>
+			<div class="readnum">{{fmtMoney(item.Item.MGTopRead, 0, true)}}</div>
 			<div class="firstprice">
-				<div class="soft">软广：<span>{{fmtMoney(item.MGTopSPrice, 0, true)}}</span></div>
-				<div class="hard">硬广：<span>{{fmtMoney(item.MGTopHPrice, 0, true)}}</span></div>
+				<div class="soft">软广：<span>{{fmtMoney(item.Item.MGTopSPrice, 0, true)}}</span></div>
+				<div class="hard">硬广：<span>{{fmtMoney(item.Item.MGTopHPrice, 0, true)}}</span></div>
 			</div>
 			<div class="secondprice">
-				<div class="soft">软广：<span>{{fmtMoney(item.MGSecondSPrice, 0, true)}}</span></div>
-				<div class="hard">硬广：<span>{{fmtMoney(item.MGSecondHPrice, 0, true)}}</span></div>
+				<div class="soft">软广：<span>{{fmtMoney(item.Item.MGSecondSPrice, 0, true)}}</span></div>
+				<div class="hard">硬广：<span>{{fmtMoney(item.Item.MGSecondHPrice, 0, true)}}</span></div>
 			</div>
 			<div class="thridprice">
-				<div class="soft">软广：<span>{{fmtMoney(item.MGOtherSPrice, 0, true)}}</span></div>
-				<div class="hard">硬广：<span>{{fmtMoney(item.MGOtherHPrice, 0, true)}}</span></div>
+				<div class="soft">软广：<span>{{fmtMoney(item.Item.MGOtherSPrice, 0, true)}}</span></div>
+				<div class="hard">硬广：<span>{{fmtMoney(item.Item.MGOtherHPrice, 0, true)}}</span></div>
 			</div>
 			<div class="forthprice" style="width:185px;">
-				<div class="soft">软广：<span>{{fmtMoney(item.SGSPrice, 0, true)}}</span></div>
-				<div class="hard">硬广：<span>{{fmtMoney(item.SGHPrice, 0, true)}}</span></div>
+				<div class="soft">软广：<span>{{fmtMoney(item.Item.SGSPrice, 0, true)}}</span></div>
+				<div class="hard">硬广：<span>{{fmtMoney(item.Item.SGHPrice, 0, true)}}</span></div>
 			</div>
 			<div class="operation">
-				<div class="collect" data-id="{{item.Id}}"></div>
-				<div class="price" data-id="{{item.Id}}"></div>
+				<div class="collect" data-id="{{item.Item.Id}}"></div>
+				<div class="price" data-id="{{item.Item.Id}}"></div>
 			</div>
 		</div>
 	</div>

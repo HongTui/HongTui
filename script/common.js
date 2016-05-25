@@ -7,7 +7,7 @@ Util.cookie = {
 
 	    var oDate = new Date();
 	    oDate.setDate(oDate.getDate() + iDay);
-	    document.cookie = name + '=' + value + ';path=/;expires=' + oDate.toGMTString() + ';domain=' + (domain || '.souyidai.com');
+	    document.cookie = name + '=' + value + ';path=/;expires=' + oDate.toGMTString();
 	},
 	get: function(name){
 	    var cookies = document.cookie.split('; ');
@@ -374,7 +374,7 @@ Util.requestAjaxFn = function(options){
         dataType: options.dataType || 'json',
         async:options.async == false ? false : true,
          headers: {
-            Authorization:'Bearer ' + config_ajax.token 
+            Authorization:'Bearer ' + Util.cookie.get('token') 
         },
         data: data
     })
