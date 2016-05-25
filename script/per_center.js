@@ -82,7 +82,7 @@ $(function(){
 	});
 
 	//绑定选择框事件
-	$result_list.find('.checkbox2').on('click', '.checkbox2', function(){
+	$result_list.on('click', '.checkbox2', function(){
 		$(this).toggleClass('checked');
 		getChoiceNum();
 	})
