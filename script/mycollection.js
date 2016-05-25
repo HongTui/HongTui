@@ -34,13 +34,14 @@ $(function(){
 	$("#result-con").on('click', '.collect', function(){
 		var type = "";
 		var $this = $(this);
-		if($this.hasClass('selected')){
-			//取消收藏
-			type = "DELETE";
-		}else{
-			//收藏
-			type = config_ajax[config_ajax.envir].type;
-		}
+		// if($this.hasClass('selected')){
+		// 	//取消收藏
+		// 	type = "DELETE";
+		// }else{
+		// 	//收藏
+		// 	type = config_ajax[config_ajax.envir].type;
+		// }
+		type = "DELETE";
 		var ajaxParams = {
 			url: config_ajax[config_ajax.envir].operFav,
 			type: type,
@@ -48,7 +49,9 @@ $(function(){
 				Wid: $this.attr('data-id')
 			},
 			succFn: function(data){
-				$this.toggleClass('selected');
+				config.data.Page = 0;
+				getList();
+				// $this.toggleClass('selected');
 			}
 		};
 		Util.requestAjaxFn(ajaxParams);
