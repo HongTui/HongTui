@@ -82,13 +82,20 @@ $(function(){
 	});
 
 	//绑定选择框事件
-	$result_list.on('click', '.checkbox2', function(){
+	$result_list.find('.checkbox2').on('click', '.checkbox2', function(){
 		$(this).toggleClass('checked');
 		getChoiceNum();
 	})
 	//绑定全选事件
 	$allCheck.on('click', function(){
-		$result_list.find(".checkbox2").toggleClass('checked');
+		if($(this).hasClass('checkbox2')){
+			$allCheck.removeClass('checked');
+			$result_list.find('.checkbox2').removeClass('checked');
+		}else{
+			$allCheck.addClass('checked');
+			$result_list.find('.checkbox2').addClass('checked');
+		}
+		
 		getChoiceNum();
 	})
 	//设置选中的个数
