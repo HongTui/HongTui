@@ -16,7 +16,7 @@ var config_ajax = {
 		'login': '/Token',
 		'userInfo': '/Api/Account/UserInfo',
 		'getMedia': '/Api/Media',
-		'operFav': '/Api/Favo',
+		'getfavo': '/Api/Favo',
 		'getCart': '/Api/Cart',
 		'CORS': 'http://toufang.unity-ad.com'
 	},

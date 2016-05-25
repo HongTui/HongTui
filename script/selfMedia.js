@@ -44,9 +44,8 @@ $(function(){
 			_fun_max = $fun.attr('data-max');
 		}
 
-
+		var _category = $category.find('.current').html();
 		var dataParams = {
-			Category: $category.find('.current').html(),
 			PriceItem: $priceItem_type.attr('data-type'),
 			PriceMin: _price_min,
 			PriceMax: _price_max,
@@ -58,6 +57,9 @@ $(function(){
 			SortItem: $('[data-type=sort] .select').attr('data-sortItem'),
 			SortType: $('[data-type=sort] .select').attr('data-sortType')
 		};
+		if(_category != "不限"){
+			dataParams.Category = _category;
+		}
 		var ajaxParams = {
 			url: config_ajax[config_ajax.envir].getMedia,
 			type: 'GET',
