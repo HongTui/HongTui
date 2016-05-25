@@ -113,8 +113,8 @@ $(function(){
 		});
 		if(arrId.length>0){
 			var ajaxParams = {
-				url: config_ajax[config._envir].order,
-				type: config_ajax[config._envir].type,
+				url: config_ajax[config_ajax.envir].order,
+				type: config_ajax[config_ajax.envir].type,
 				data: arrId,
 				succFn: function(data){
 					var left = $(window).width()/2;
