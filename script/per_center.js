@@ -123,7 +123,7 @@ $(function(){
 				url: config_ajax[config_ajax.envir].order,
 				type: config_ajax[config_ajax.envir].type,
 				data: {
-					Id: arrId
+					Wids: arrId
 				},
 				succFn: function(data){
 					var left = $(window).width()/2;
